@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    margin: 0;
+}
+
+h1 {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+.header {
+    background-color:#ffffff;
+    color:#444444;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  
+}
+
+.menu {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.intro {
+    height: 630px;
+    width: 100%;
+    background-color: #1445b3;
+}
+
+.about {
+    height: 1575px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.services {
+    height: 950px;
+    width: 100%;
+    background-color: #ecf5ff;
+}
+
+.choose {
+    height: 950px;
+    width: 100%;
+    background-color: #1445b3;
+}
+
+.portfolio {
+    height: 1260px;
+    width: 100%;
+    background-color: #ffffff
+}
+
+.testimonials {
+    height: 400px;
+    width: 100%;
+    background-color: #ecf5ff;
+}
+
+.team {
+    height: 630px;
+    width: 100%;
+    background-color: #ffffff
+}
+
+.clients {
+    height: 800px;
+    width: 100%;
+    background-color: #ecf5ff;
+}
+
+.contact {
+    height: 700px;
+    width: 100%;
+    background-color: #ffffff
+}
+
+.footer {
+    height: 1000px;
+    width: 100%;
+    background-color: #004a99
+}
+
+.copyright {
+    height: 100px;
+    width: 100%;
+    background-color: #052b53
+}
