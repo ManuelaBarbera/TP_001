@@ -2,8 +2,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
 
 
@@ -12,16 +12,7 @@ img.logo {
     width: auto; 
     display: inline-block;
     padding-top: 28px;
-}
-
-
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 3%;
-
+    padding-left: 8%;
 }
 
 .header {
@@ -30,9 +21,9 @@ h3 {
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: space-around;
-  
+    justify-content: space-around;  
 }
+
 .menu {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
@@ -40,7 +31,7 @@ h3 {
 
 li {
     font-size:14px;
-    color: 
+    color: #004289;
     float: left;
     padding: 10px;
     text-align: left;
@@ -62,11 +53,57 @@ a{
 
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 0%
+
+}
+
+
+
+
+
+
+
 .intro {
     height: 630px;
     width: 100%;
     background-color: #1445b3;
 }
+
+.titulo {
+    height: 630px;
+    width: 400px;
+    float: left;
+    padding-top: 14%;
+    padding-left: 12%;
+    margin-bottom: 40px;
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0px 0px 20px;
+    
+}
+.botones {
+
+}
+.imgventanas{
+    height: 55px;
+    width: 560px;
+    float: right;
+    padding-top: 13%;
+    padding-right: 12%;
+}
+.imgventanas img {
+    width: 100%;
+    height: auto
+    }
 
 .about {
     height: 1575px;
