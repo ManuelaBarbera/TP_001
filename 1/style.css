@@ -171,7 +171,32 @@ h2{
     height: 400px;
     width: 100%;
     background-color: #ecf5ff;
+    padding-top: 10px;
+    }
+
+.content-testimonials {
+        padding-right: 280px;
+        padding-left: 280px;
+        display: flex;
 }
+
+.heath {
+    width: 120px;
+    height: auto;
+    border-radius: 60px;
+    margin-right: 20px;
+}
+
+.content-testimonials h5 {
+    font-size: 14px;
+    color: #999;
+}
+
+
+.content-testimonials p {
+    font-style: italic;
+}
+
 
 /* ---------------------------------------
 ------------------------------------------
