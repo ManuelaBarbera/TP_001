@@ -331,11 +331,43 @@ h2{
 
 
 .footer {
-    height: 1000px;
+    height: 500px;
     width: 100%;
-    background-color: #004a99
-}
+    background-color: #004a99;
+    color: white;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
 
+        }
+
+    .bloque1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wayne {
+        width: 200px;
+    }
+
+    .links {
+        width: 200px;
+    }
+
+    .contactus {
+        width: 200px;
+    }
+
+    .newsletter {
+        width: 200px
+    }
 
 /* ---------------------------------------
 ------------------------------------------
