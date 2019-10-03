@@ -305,10 +305,43 @@ h2{
 -------------------------------------------*/
 
 .clients {
-    height: 800px;
+    height: 600px;
     width: 100%;
     background-color: #ecf5ff;
+    }
+
+.clients p {
+    text-align: center;
+}    
+
+.bloque1 {
+    display: flex;
+    justify-content: center;
+    }
+
+.bloque2 {
+    display: flex;
+    justify-content: center;
+    }
+
+.cajablanca {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    margin: 1px;
+} 
+
+.logocliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.logocliente img {
+    width: 100px;
+    height: auto;
+    
+}
+
 
 /* ---------------------------------------
 ------------------------------------------
