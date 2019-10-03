@@ -330,7 +330,7 @@ h2{
 -------------------------------------------*/
 
 
-.footer {
+footer {
     height: 500px;
     width: 100%;
     background-color: #004a99;
@@ -377,5 +377,14 @@ h2{
 .copyright {
     height: 100px;
     width: 100%;
-    background-color: #052b53
+    background-color: #00428a;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.copyright p span {
+    font-weight: bolder;
 }
