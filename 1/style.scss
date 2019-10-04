@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+$color1:  #ffffff; 
+$color2:  #1445b3; 
+$color3:  #007bff;
+$color4:  #74b5fc;
+$color5:  #004289;
+$color6:  #283d50;
+$color7:  #556877;
+$color8:  #444444; 
+$color9:  #111111;
+$color10: #004a99; 
+$color11: #bfddfe;
+$color12: #999999;
+
+$tamaño1:  12px; 
+$tamaño2:  13px;
+$tamaño3:  14px;
+$tamaño4:  15px;
+$tamaño5:  16px;
+$tamaño6:  18px; 
+$tamaño7:  20px; 
+$tamaño8:  22px;
+$tamaño9:  24px;
+$tamaño10: 36px;
+$tamaño11: 48px;
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'Open Sans', sans-serif;
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* ---------------------------------------
+------------------------------------------
+                      HEADER 
+-------------------------------------------
+-------------------------------------------*/
+
+img.logo {
+    height:25px; 
+    width: auto; 
+    display: inline-block;
+    padding-top: 28px;
+    padding-left: 8%;
+}
+
+.header {
+    background-color:#ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;  
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+li {
+    font-size:14px;
+    color: #004289;
+    float: left;
+    padding: 10px;
+    text-align: left;
+    list-style-type:none;
+
+}
+
+a{
+    text-decoration: none;
+    color: #004289;
+
+}
+
+.dropdown {
+    display: none;
+
+}
+.deepdropdown {
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 0%
+
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                WE PROVIDE
+-------------------------------------------
+-------------------------------------------*/
+
+
+.intro {
+    height: 630px;
+    width: 100%;
+    background-color: #1445b3;
+}
+
+.titulo {
+    height: 630px;
+    width: 400px;
+    float: left;
+    padding-top: 14%;
+    padding-left: 12%;
+    margin-bottom: 40px;
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0px 0px 20px;
+    
+}
+.botones {
+
+}
+.imgventanas{
+    height: 55px;
+    width: 560px;
+    float: right;
+    padding-top: 13%;
+    padding-right: 12%;
+}
+.imgventanas img {
+    width: 100%;
+    height: auto
+    }
+
+/* ---------------------------------------
+------------------------------------------
+                      ABOUT
+-------------------------------------------
+-------------------------------------------*/
+
+.about {
+    height: 1575px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* ---------------------------------------
+------------------------------------------
+                    SERVICES
+-------------------------------------------
+-------------------------------------------*/
+.services {
+    height: 950px;
+    width: 100%;
+    background-color: #ecf5ff;
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                WHY CHOOSE US
+-------------------------------------------
+-------------------------------------------*/
+
+.choose {
+    height: 950px;
+    width: 100%;
+    background-color: #1445b3;
+}
+
+/* ---------------------------------------
+------------------------------------------
+                PORTFOLIO
+-------------------------------------------
+-------------------------------------------*/
+
+.portfolio {
+    height: 1260px;
+    width: 100%;
+    background-color: #ffffff
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                TESTIMONIALS 
+-------------------------------------------
+-------------------------------------------*/
+
+.testimonials {
+    height: 400px;
+    width: 100%;
+    background-color: #ecf5ff;
+    padding-top: 10px;
+    }
+
+.content-testimonials {
+        padding-right: 280px;
+        padding-left: 280px;
+        display: flex;
+}
+
+.heath {
+    width: 120px;
+    height: auto;
+    border-radius: 60px;
+    margin-right: 20px;
+}
+
+.content-testimonials h5 {
+    font-size: 14px;
+    color: #999;
+}
+
+
+.content-testimonials p {
+    font-style: italic;
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                TEAM 
+-------------------------------------------
+-------------------------------------------*/
+
+.team {
+	height: 500px;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fotosteam {
+	display: flex;
+}
+
+.batman1 {
+	width: 220px;
+	height: 220px;
+	background-image: url("./img/team-01.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.batman2 {
+	width: 220px;
+	height: 220px;
+	background-image: url("./img/team-02.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.batman3 {
+	width: 220px;
+	height: 220px;
+	background-image: url("./img/team-03.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.batman4 {
+	width: 220px;
+	height: 220px;
+	background-image: url("./img/team-04.jpg");
+	background-position: center;
+	background-size: cover;
+	margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    }
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(46, 46, 142, 0.5);
+    color: white;
+	width: 100%;
+	height: 100%;
+	transform: translateY(220px);
+	transition: transform 1s;
+}
+
+.batman1:hover .overlay {
+	transform: translateX(0);
+}
+
+.batman2:hover .overlay {
+	transform: translateX(0);
+}
+
+.batman3:hover .overlay {
+	transform: translateX(0);
+}
+
+.batman4:hover .overlay {
+	transform: translateX(0);
+}
+
+.nombrebatman {
+    font-weight: bold; 
+}
+
+.cargobatman {
+    font-style: italic;
+}
+
+/* ---------------------------------------
+------------------------------------------
+                    CLIENTS 
+-------------------------------------------
+-------------------------------------------*/
+
+.clients {
+    height: 600px;
+    width: 100%;
+    background-color: #ecf5ff;
+    }
+
+.clients p {
+    text-align: center;
+}    
+
+.bloque1 {
+    display: flex;
+    justify-content: center;
+    }
+
+.bloque2 {
+    display: flex;
+    justify-content: center;
+    }
+
+.cajablanca {
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    margin: 1px;
+} 
+
+.logocliente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logocliente img {
+    width: 100px;
+    height: auto;
+    
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                   CONTACT 
+-------------------------------------------
+-------------------------------------------*/
+
+.contact {
+    height: 700px;
+    width: 100%;
+    background-color: #ffffff
+}
+
+
+/* ---------------------------------------
+------------------------------------------
+                  FOOTER 
+-------------------------------------------
+-------------------------------------------*/
+
+
+footer {
+    height: 500px;
+    width: 100%;
+    background-color: #004a99;
+    color: white;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+
+        }
+
+    .bloque1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bloque2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wayne {
+        width: 200px;
+    }
+
+    .links {
+        width: 200px;
+    }
+
+    .contactus {
+        width: 200px;
+    }
+
+    .newsletter {
+        width: 200px
+    }
+
+/* ---------------------------------------
+------------------------------------------
+                 COPYRIGHT 
+-------------------------------------------
+-------------------------------------------*/
+.copyright {
+    height: 100px;
+    width: 100%;
+    background-color: #00428a;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.copyright p span {
+    font-weight: bolder;
+}
