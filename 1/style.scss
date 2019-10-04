@@ -13,33 +13,15 @@ $color9:  #111111;
 $color10: #004a99; 
 $color11: #bfddfe;
 $color12: #999999;
-
-$tamaño1:  12px; 
-$tamaño2:  13px;
-$tamaño3:  14px;
-$tamaño4:  15px;
-$tamaño5:  16px;
-$tamaño6:  18px; 
-$tamaño7:  20px; 
-$tamaño8:  22px;
-$tamaño9:  24px;
-$tamaño10: 36px;
-$tamaño11: 48px;
+$color13: #ecf5ff;
+$color14: #00428a; 
 
 $font1: 'Montserrat', sans-serif;
 $font2: 'Open Sans', sans-serif;
 
 
-
-
-
-
-
-
-
-
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1; 
     padding: 0%;
     margin: 0%;
 }
@@ -59,7 +41,7 @@ img.logo {
 }
 
 .header {
-    background-color:#ffffff;
+    background-color: $color1;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -68,13 +50,13 @@ img.logo {
 }
 
 .menu {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
     text-align: left;
 }
 
 li {
-    font-size:14px;
-    color: #004289;
+    font-size: 14px;  
+    color: $color5;
     float: left;
     padding: 10px;
     text-align: left;
@@ -84,7 +66,7 @@ li {
 
 a{
     text-decoration: none;
-    color: #004289;
+    color: $color5
 
 }
 
@@ -97,7 +79,7 @@ a{
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1;
     font-size: 40px;
     text-align: center;
     padding-top: 0%
@@ -115,7 +97,7 @@ h3 {
 .intro {
     height: 630px;
     width: 100%;
-    background-color: #1445b3;
+    background-color: $color2
 }
 
 .titulo {
@@ -128,9 +110,9 @@ h3 {
 
 }
 h2{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font1; 
     font-size: 48px;
-    color: #ffffff;
+    color: $color1; 
     text-align: left;
     margin: 0px 0px 20px;
     
@@ -159,7 +141,7 @@ h2{
 .about {
     height: 1575px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $color1;
 }
 
 /* ---------------------------------------
@@ -170,7 +152,7 @@ h2{
 .services {
     height: 950px;
     width: 100%;
-    background-color: #ecf5ff;
+    background-color: $color13; 
 }
 
 
@@ -183,7 +165,7 @@ h2{
 .choose {
     height: 950px;
     width: 100%;
-    background-color: #1445b3;
+    background-color: $color10; 
 }
 
 /* ---------------------------------------
@@ -195,7 +177,7 @@ h2{
 .portfolio {
     height: 1260px;
     width: 100%;
-    background-color: #ffffff
+    background-color: $color1
 }
 
 
@@ -208,7 +190,7 @@ h2{
 .testimonials {
     height: 400px;
     width: 100%;
-    background-color: #ecf5ff;
+    background-color: $color13; 
     padding-top: 10px;
     }
 
@@ -227,7 +209,7 @@ h2{
 
 .content-testimonials h5 {
     font-size: 14px;
-    color: #999;
+    color: $color12; 
 }
 
 
@@ -245,7 +227,7 @@ h2{
 .team {
 	height: 500px;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: $color1; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -305,7 +287,7 @@ h2{
     align-items: center;
     flex-direction: column;
     background-color: rgba(46, 46, 142, 0.5);
-    color: white;
+    color: $color1; 
 	width: 100%;
 	height: 100%;
 	transform: translateY(220px);
@@ -345,7 +327,7 @@ h2{
 .clients {
     height: 600px;
     width: 100%;
-    background-color: #ecf5ff;
+    background-color: $color13; 
     }
 
 .clients p {
@@ -365,7 +347,7 @@ h2{
 .cajablanca {
     width: 200px;
     height: 150px;
-    background-color: white;
+    background-color: $color1; 
     margin: 1px;
 } 
 
@@ -390,7 +372,7 @@ h2{
 .contact {
     height: 700px;
     width: 100%;
-    background-color: #ffffff
+    background-color: $color1;
 }
 
 
@@ -404,8 +386,8 @@ h2{
 footer {
     height: 500px;
     width: 100%;
-    background-color: #004a99;
-    color: white;
+    background-color: $color10;
+    color: $color1; 
     padding-right: 200px;
     padding-left: 200px;
     padding-top: 100px;
@@ -448,9 +430,9 @@ footer {
 .copyright {
     height: 100px;
     width: 100%;
-    background-color: #00428a;
+    background-color: $color14; 
     text-align: center;
-    color: white;
+    color: $color1; 
     padding-top: 20px;
     font-weight: 400;
     line-height: 1.5;
