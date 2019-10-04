@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0%;
   margin: 0%; }
 
@@ -26,7 +26,7 @@ img.logo {
   justify-content: space-around; }
 
 .menu {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: left; }
 
 li {
@@ -45,7 +45,7 @@ a {
   display: none; }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   text-align: center;
   padding-top: 0%; }
@@ -69,7 +69,7 @@ h3 {
   margin-bottom: 40px; }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   color: #ffffff;
   text-align: left;
@@ -114,7 +114,7 @@ h2 {
 .choose {
   height: 950px;
   width: 100%;
-  background-color: #1445b3; }
+  background-color: #004a99; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -150,7 +150,7 @@ h2 {
 
 .content-testimonials h5 {
   font-size: 14px;
-  color: #999; }
+  color: #999999; }
 
 .content-testimonials p {
   font-style: italic; }
@@ -217,7 +217,7 @@ h2 {
   align-items: center;
   flex-direction: column;
   background-color: rgba(46, 46, 142, 0.5);
-  color: white;
+  color: #ffffff;
   width: 100%;
   height: 100%;
   transform: translateY(220px);
@@ -265,7 +265,7 @@ h2 {
 .cajablanca {
   width: 200px;
   height: 150px;
-  background-color: white;
+  background-color: #ffffff;
   margin: 1px; }
 
 .logocliente {
@@ -296,7 +296,7 @@ footer {
   height: 500px;
   width: 100%;
   background-color: #004a99;
-  color: white;
+  color: #ffffff;
   padding-right: 200px;
   padding-left: 200px;
   padding-top: 100px;
@@ -312,10 +312,12 @@ footer {
   flex-direction: row; }
 
 .wayne {
-  width: 200px; }
+  width: 300px;
+  font-size: 13px;
+  line-height: 24px; }
 
 .links {
-  width: 200px; }
+  width: 100px; }
 
 .contactus {
   width: 200px; }
@@ -333,10 +335,9 @@ footer {
   width: 100%;
   background-color: #00428a;
   text-align: center;
-  color: white;
+  color: #ffffff;
   padding-top: 20px;
   font-weight: 400;
   line-height: 1.5; }
-
-.copyright p span {
-  font-weight: bolder; }
+  .copyright p span {
+    font-weight: bolder; }
