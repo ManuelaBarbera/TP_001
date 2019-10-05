@@ -289,7 +289,8 @@ h2 {
   height: 700px;
   width: 100%;
   background-color: #ffffff;
-  padding: 50px; }
+  padding: 50px;
+  display: flex; }
   .contact .infocontacto {
     width: 300px; }
 
