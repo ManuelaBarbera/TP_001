@@ -328,6 +328,7 @@ h2{
     height: 600px;
     width: 100%;
     background-color: $color13; 
+    padding: 50px;
     }
 
 .clients p {
@@ -345,21 +346,27 @@ h2{
     }
 
 .cajablanca {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     background-color: $color1; 
     margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
 } 
 
 .logocliente {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logocliente img {
-    width: 100px;
-    height: auto;
     
+    img {
+        width: 120px;
+        height: auto;
+        transition: all 2s;
+    }
+
+    img:hover {
+    transform: scale(1.5,1.5);
+    }
 }
 
 
@@ -373,7 +380,34 @@ h2{
     height: 700px;
     width: 100%;
     background-color: $color1;
+    padding: 50px;
+
+
+
+.infocontacto {
+
+    width: 300px;
+
+
+}    
 }
+
+.mapouter {
+    
+position: relative;
+text-align: right;
+height: 400px;
+width: 550px;
+ }
+
+.gmap_canvas {
+ overflow: hidden;
+ background: none !important;
+ height: 400px;
+ width: 550px;
+ }
+
+
 
 
 /* ---------------------------------------
