@@ -377,12 +377,14 @@ h2{
 -------------------------------------------*/
 
 .contact {
-    height: 700px;
+    height: 500px;
     width: 100%;
     background-color: $color1;
     padding: 50px;
-    display: flex;
+    
  
+    .contactustotal {
+        display:flex;
     
         .mapouter {
         position: relative;
@@ -396,6 +398,7 @@ h2{
         background: none !important;
         height: 350px;
         width: 500px;
+    }
     }
 }     
 }

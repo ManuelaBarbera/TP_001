@@ -286,21 +286,22 @@ h2 {
 -------------------------------------------
 -------------------------------------------*/
 .contact {
-  height: 700px;
+  height: 500px;
   width: 100%;
   background-color: #ffffff;
-  padding: 50px;
-  display: flex; }
-  .contact .mapouter {
-    position: relative;
-    text-align: right;
-    height: 350px;
-    width: 500px; }
-    .contact .mapouter .gmap_canvas {
-      overflow: hidden;
-      background: none !important;
+  padding: 50px; }
+  .contact .contactustotal {
+    display: flex; }
+    .contact .contactustotal .mapouter {
+      position: relative;
+      text-align: right;
       height: 350px;
       width: 500px; }
+      .contact .contactustotal .mapouter .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 350px;
+        width: 500px; }
 
 .infocontacto {
   width: 300px; }
