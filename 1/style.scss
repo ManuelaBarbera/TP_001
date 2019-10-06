@@ -382,29 +382,29 @@ h2{
     background-color: $color1;
     padding: 50px;
     display: flex;
+ 
+    
+        .mapouter {
+        position: relative;
+        text-align: right;
+        height: 350px;
+        width: 500px;
+    
 
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 350px;
+        width: 500px;
+    }
+}     
+}
 
 .infocontacto {
 
     width: 300px;
 
-}    
 }
-
-.mapouter {
-    
-position: relative;
-text-align: right;
-height: 400px;
-width: 550px;
- }
-
-.gmap_canvas {
- overflow: hidden;
- background: none !important;
- height: 400px;
- width: 550px;
- }
 
 
 

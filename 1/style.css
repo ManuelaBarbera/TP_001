@@ -291,20 +291,19 @@ h2 {
   background-color: #ffffff;
   padding: 50px;
   display: flex; }
-  .contact .infocontacto {
-    width: 300px; }
+  .contact .mapouter {
+    position: relative;
+    text-align: right;
+    height: 350px;
+    width: 500px; }
+    .contact .mapouter .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 350px;
+      width: 500px; }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 400px;
-  width: 550px; }
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 400px;
-  width: 550px; }
+.infocontacto {
+  width: 300px; }
 
 /* ---------------------------------------
 ------------------------------------------
