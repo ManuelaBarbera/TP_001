@@ -292,19 +292,56 @@ h2 {
   padding: 50px; }
   .contact .contactustotal {
     display: flex; }
-    .contact .contactustotal .mapouter {
-      position: relative;
-      text-align: right;
-      height: 350px;
-      width: 500px; }
-      .contact .contactustotal .mapouter .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
+    .contact .contactustotal .columna1 {
+      margin: 20px; }
+      .contact .contactustotal .columna1 .mapouter {
+        position: relative;
+        text-align: right;
         height: 350px;
         width: 500px; }
+        .contact .contactustotal .columna1 .mapouter .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 350px;
+          width: 500px; }
 
-.infocontacto {
-  width: 300px; }
+.columna2 {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  flex-direction: column; }
+  .columna2 .infocontacto {
+    margin-bottom: 20px;
+    display: flex; }
+    .columna2 .infocontacto i {
+      color: #007bff; }
+      .columna2 .infocontacto i p {
+        color: #283d50; }
+
+.form {
+  display: flex; }
+
+input {
+  padding-left: 5px; }
+
+.primerinput {
+  width: 300px;
+  height: 30px; }
+
+.segundoinput {
+  height: 30px;
+  width: 600px; }
+
+.sendmessage {
+  height: 40px;
+  width: 140px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 20px;
+  transition: 0.3s; }
+
+.sendmessage:hover {
+  background-color: #004a99; }
 
 /* ---------------------------------------
 ------------------------------------------

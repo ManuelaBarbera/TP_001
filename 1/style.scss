@@ -386,6 +386,10 @@ h2{
     .contactustotal {
         display:flex;
     
+        .columna1{
+            margin: 20px;
+
+        
         .mapouter {
         position: relative;
         text-align: right;
@@ -400,17 +404,65 @@ h2{
         width: 500px;
     }
     }
+}
 }     
 }
 
-.infocontacto {
+.columna2 {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
 
-    width: 300px;
+    .infocontacto {
+        
+    margin-bottom: 20px;
+    display: flex;
+
+          i {
+            color: $color3;
+                      
+    p {
+        color: $color6;
+    }
+    
+}
+                    }
+
 
 }
 
+.form {
+    display: flex;
+    
+}
 
+input {
+    padding-left: 5px;
+}
 
+.primerinput {
+    width: 300px;
+    height: 30px;
+}
+
+.segundoinput {
+    height: 30px;
+    width: 600px;
+}
+
+.sendmessage {
+    height: 40px;
+    width: 140px;
+    background-color: $color3;
+    color: $color1;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.sendmessage:hover {
+    background-color: $color10;
+}
 
 /* ---------------------------------------
 ------------------------------------------
