@@ -42,12 +42,17 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-around;  
+    align-items: center;
+}
+nav div {
+    padding-left: 20px;
 }
 .img-logo img{
     height:25px; 
     width: auto;  
     margin-right: 200px;  
 }
+
 .links-header a{
     text-decoration: none;
     transition: all 0.4s;
@@ -112,6 +117,7 @@ span{
     border-radius: 50px;
     margin: 0 20px 20px 0;
     transition: all 0.5s;
+    text-decoration: none;
 }
 .boton-main1:hover{
     background-color: $color2;
@@ -129,6 +135,7 @@ span{
     border-radius: 50px;
     margin: 0 20px 20px 0;
     transition: all 0.5s;
+    text-decoration: none;
 }
 .boton-main2:hover{
     background-color: $color3;

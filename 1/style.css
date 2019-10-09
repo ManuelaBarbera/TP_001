@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  padding: 0%;
-  margin: 0%; }
+  margin: 0; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -21,7 +20,11 @@ nav {
   padding: 20px 10px;
   position: fixed;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
+
+nav div {
+  padding-left: 20px; }
 
 .img-logo img {
   height: 25px;
@@ -83,7 +86,8 @@ span {
   border: 2px solid #007bff;
   border-radius: 50px;
   margin: 0 20px 20px 0;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  text-decoration: none; }
 
 .boton-main1:hover {
   background-color: #1445b3;
@@ -100,7 +104,8 @@ span {
   border: 2px solid #ffffff;
   border-radius: 50px;
   margin: 0 20px 20px 0;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  text-decoration: none; }
 
 .boton-main2:hover {
   background-color: #007bff;
