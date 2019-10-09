@@ -139,7 +139,7 @@ h2{
 -------------------------------------------*/
 
 .about {
-    height: 1575px;
+    height: 950px;
     width: 100%;
     background-color: $color1;
 }
@@ -153,6 +153,32 @@ h2{
     height: 950px;
     width: 100%;
     background-color: $color13; 
+    padding-top: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+    .titulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+}
+
+.contenedorcajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        }
+
+.cajas {
+    width: 400px;
+    height: 150px;
+    background-color: $color1;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -458,7 +484,7 @@ input {
     color: $color1;
     border-radius: 20px;
     transition: 0.3s;
-}
+    }
 
 .sendmessage:hover {
     background-color: $color10;
@@ -472,7 +498,7 @@ input {
 
 
 footer {
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-color: $color10;
     color: $color1; 
