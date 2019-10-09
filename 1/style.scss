@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
@@ -19,11 +20,9 @@ $color14: #00428a;
 $font1: 'Montserrat', sans-serif;
 $font2: 'Open Sans', sans-serif;
 
-
 body{
     font-family: $font1; 
-    padding: 0%;
-    margin: 0%;
+    margin: 0;
 }
 
 /* ---------------------------------------
@@ -31,51 +30,30 @@ body{
                       HEADER 
 -------------------------------------------
 -------------------------------------------*/
-
-img.logo {
-    height:25px; 
-    width: auto; 
-    display: inline-block;
-    padding-top: 28px;
-    padding-left: 8%;
-}
-
-.header {
+nav {
     background-color: $color1;
-    height: 80px;
+    font-family: $font1;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color5;
+    height: auto;
     width: 100%;
+    padding: 20px 10px;
     position: fixed;
     display: flex;
     justify-content: space-around;  
 }
-
-.menu {
-    font-family: $font1;
-    text-align: left;
+.img-logo img{
+    height:25px; 
+    width: auto;  
+    margin-right: 200px;  
 }
-
-li {
-    font-size: 14px;  
-    color: $color5;
-    float: left;
-    padding: 10px;
-    text-align: left;
-    list-style-type:none;
-
-}
-
-a{
+.links-header a{
     text-decoration: none;
-    color: $color5
-
+    transition: all 0.4s;
 }
-
-.dropdown {
-    display: none;
-
-}
-.deepdropdown {
-
+.links-header a:hover{
+    color: $color3;
 }
 
 h3 {
@@ -94,14 +72,14 @@ h3 {
 -------------------------------------------*/
 
 
-.intro {
+#intro {
     height: 630px;
     width: 100%;
     background-color: $color2
 }
 
 .titulo {
-    height: 630px;
+    height: auto;
     width: 400px;
     float: left;
     padding-top: 14%;
@@ -109,16 +87,52 @@ h3 {
     margin-bottom: 40px;
 
 }
-h2{
+h1{
     font-family: $font1; 
     font-size: 48px;
+    font-weight: bolder;
     color: $color1; 
     text-align: left;
-    margin: 0px 0px 20px;
-    
+    margin: 0px 0px 40px 0px;
 }
-.botones {
-
+span{
+    color: $color4;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.boton-main1{
+    background-color: $color3;
+    color: $color1;
+    font-family: $font1;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 32px;
+    border: 2px solid $color3;
+    border-radius: 50px;
+    margin: 0 20px 20px 0;
+    transition: all 0.5s;
+}
+.boton-main1:hover{
+    background-color: $color2;
+    border: 2px solid $color1;
+}
+.boton-main2{
+    background-color: $color2;
+    color: $color1;
+    font-family: $font1;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 32px;
+    border: 2px solid $color1;
+    border-radius: 50px;
+    margin: 0 20px 20px 0;
+    transition: all 0.5s;
+}
+.boton-main2:hover{
+    background-color: $color3;
+    border: 2px solid $color3;
 }
 .imgventanas{
     height: 55px;
@@ -138,10 +152,12 @@ h2{
 -------------------------------------------
 -------------------------------------------*/
 
-.about {
-    height: 950px;
+#about {
     width: 100%;
     background-color: $color1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ---------------------------------------
@@ -153,32 +169,6 @@ h2{
     height: 950px;
     width: 100%;
     background-color: $color13; 
-    padding-top: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
-    
-    .titulos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        
-    }
-}
-
-.contenedorcajas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-        }
-
-.cajas {
-    width: 400px;
-    height: 150px;
-    background-color: $color1;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
 }
 
 
@@ -484,7 +474,7 @@ input {
     color: $color1;
     border-radius: 20px;
     transition: 0.3s;
-    }
+}
 
 .sendmessage:hover {
     background-color: $color10;
@@ -498,7 +488,7 @@ input {
 
 
 footer {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-color: $color10;
     color: $color1; 

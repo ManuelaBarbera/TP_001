@@ -10,39 +10,30 @@ body {
                       HEADER 
 -------------------------------------------
 -------------------------------------------*/
-img.logo {
-  height: 25px;
-  width: auto;
-  display: inline-block;
-  padding-top: 28px;
-  padding-left: 8%; }
-
-.header {
+nav {
   background-color: #ffffff;
-  height: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #004289;
+  height: auto;
   width: 100%;
+  padding: 20px 10px;
   position: fixed;
   display: flex;
   justify-content: space-around; }
 
-.menu {
-  font-family: "Montserrat", sans-serif;
-  text-align: left; }
+.img-logo img {
+  height: 25px;
+  width: auto;
+  margin-right: 200px; }
 
-li {
-  font-size: 14px;
-  color: #004289;
-  float: left;
-  padding: 10px;
-  text-align: left;
-  list-style-type: none; }
-
-a {
+.links-header a {
   text-decoration: none;
-  color: #004289; }
+  transition: all 0.4s; }
 
-.dropdown {
-  display: none; }
+.links-header a:hover {
+  color: #007bff; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -55,25 +46,65 @@ h3 {
                 WE PROVIDE
 -------------------------------------------
 -------------------------------------------*/
-.intro {
+#intro {
   height: 630px;
   width: 100%;
   background-color: #1445b3; }
 
 .titulo {
-  height: 630px;
+  height: auto;
   width: 400px;
   float: left;
   padding-top: 14%;
   padding-left: 12%;
   margin-bottom: 40px; }
 
-h2 {
+h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
+  font-weight: bolder;
   color: #ffffff;
   text-align: left;
-  margin: 0px 0px 20px; }
+  margin: 0px 0px 40px 0px; }
+
+span {
+  color: #74b5fc;
+  text-decoration: underline;
+  font-weight: bolder; }
+
+.boton-main1 {
+  background-color: #007bff;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 32px;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  margin: 0 20px 20px 0;
+  transition: all 0.5s; }
+
+.boton-main1:hover {
+  background-color: #1445b3;
+  border: 2px solid #ffffff; }
+
+.boton-main2 {
+  background-color: #1445b3;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 32px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin: 0 20px 20px 0;
+  transition: all 0.5s; }
+
+.boton-main2:hover {
+  background-color: #007bff;
+  border: 2px solid #007bff; }
 
 .imgventanas {
   height: 55px;
@@ -91,10 +122,12 @@ h2 {
                       ABOUT
 -------------------------------------------
 -------------------------------------------*/
-.about {
-  height: 950px;
+#about {
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -104,27 +137,7 @@ h2 {
 .services {
   height: 950px;
   width: 100%;
-  background-color: #ecf5ff;
-  padding-top: 30px;
-  padding-left: 200px;
-  padding-right: 200px; }
-  .services .titulos {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-.contenedorcajas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.cajas {
-  width: 400px;
-  height: 150px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px; }
+  background-color: #ecf5ff; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -369,7 +382,7 @@ input {
 -------------------------------------------
 -------------------------------------------*/
 footer {
-  height: 400px;
+  height: 500px;
   width: 100%;
   background-color: #004a99;
   color: #ffffff;
