@@ -168,15 +168,15 @@ span {
 -------------------------------------------
 -------------------------------------------*/
 #services {
-  height: 950px;
+  height: 800px;
   width: 100%;
   background-color: #ecf5ff;
   padding-top: 30px;
-  padding-left: 100px;
-  padding-right: 200px;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #services p {
+    text-align: center; }
 
 .contenedorcajas {
   display: flex;
@@ -189,7 +189,40 @@ span {
   background-color: #ffffff;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px; }
+  padding: 10px;
+  display: flex;
+  align-items: center; }
+  .cajas .encabezado {
+    font-weight: 700; }
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.icono1 {
+  color: #ff689b;
+  font-size: 64px; }
+
+.icono2 {
+  color: #3fcdc7;
+  font-size: 64px; }
+
+.icono3 {
+  color: #d6ff22;
+  font-size: 64px; }
+
+.icono4 {
+  color: #e9bf06;
+  font-size: 64px; }
+
+.icono5 {
+  color: #41cf2e;
+  font-size: 64px; }
+
+.icono6 {
+  color: #4680ff;
+  font-size: 64px; }
 
 /* ---------------------------------------
 ------------------------------------------

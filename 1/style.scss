@@ -17,9 +17,12 @@ $color12: #999999;
 $color13: #ecf5ff;
 $color14: #00428a; 
 $color15: #00458f;
+$color16: #ff689b;
 
 $font1: 'Montserrat', sans-serif;
 $font2: 'Open Sans', sans-serif;
+
+$icon: 64px;
 
 body{
     font-family: $font1; 
@@ -222,15 +225,17 @@ p {
 -------------------------------------------
 -------------------------------------------*/
 #services {
-    height: 950px;
+    height: 800px;
     width: 100%;
     background-color: $color13; 
     padding-top: 30px;
-    padding-left: 100px;
-    padding-right: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    p {
+        text-align: center;
+    }
      
     
 }
@@ -248,11 +253,55 @@ p {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+
+    
+    .encabezado {
+        font-weight: 700;
+      
+    }  
 
    }
 
+   .textcontainer {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+   }
+    
+   .icono1 {
+    color: $color16;
+    font-size: $icon;
+} 
+
+.icono2 {
+    color: #3fcdc7;
+    font-size: $icon;
+} 
 
 
+ .icono3  {
+    color: #d6ff22;
+    font-size: $icon;
+ }
+
+ 
+
+ .icono4 {
+    color: #e9bf06;
+    font-size: $icon;
+ }
+
+ .icono5 {
+    color:#41cf2e;
+    font-size: $icon;
+ }
+
+ .icono6 {
+    color: #4680ff;
+    font-size: $icon;
+ }
 
 /* ---------------------------------------
 ------------------------------------------
