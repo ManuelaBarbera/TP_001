@@ -131,18 +131,40 @@ span {
   width: 100%;
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center; }
+  #about p {
+    font-size: 15px;
+    text-align: center; }
 
 /* ---------------------------------------
 ------------------------------------------
                     SERVICES
 -------------------------------------------
 -------------------------------------------*/
-.services {
+#services {
   height: 950px;
   width: 100%;
-  background-color: #ecf5ff; }
+  background-color: #ecf5ff;
+  padding-top: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contenedorcajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.cajas {
+  width: 400px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -159,7 +181,7 @@ span {
                 PORTFOLIO
 -------------------------------------------
 -------------------------------------------*/
-.portfolio {
+#portfolio {
   height: 1260px;
   width: 100%;
   background-color: #ffffff; }
@@ -198,7 +220,7 @@ span {
                 TEAM 
 -------------------------------------------
 -------------------------------------------*/
-.team {
+#team {
   height: 500px;
   width: 100%;
   background-color: #ffffff;
@@ -323,21 +345,21 @@ span {
                    CONTACT 
 -------------------------------------------
 -------------------------------------------*/
-.contact {
+#contact {
   height: 500px;
   width: 100%;
   background-color: #ffffff;
   padding: 50px; }
-  .contact .contactustotal {
+  #contact .contactustotal {
     display: flex; }
-    .contact .contactustotal .columna1 {
+    #contact .contactustotal .columna1 {
       margin: 20px; }
-      .contact .contactustotal .columna1 .mapouter {
+      #contact .contactustotal .columna1 .mapouter {
         position: relative;
         text-align: right;
         height: 350px;
         width: 500px; }
-        .contact .contactustotal .columna1 .mapouter .gmap_canvas {
+        #contact .contactustotal .columna1 .mapouter .gmap_canvas {
           overflow: hidden;
           background: none !important;
           height: 350px;
@@ -387,7 +409,7 @@ input {
 -------------------------------------------
 -------------------------------------------*/
 footer {
-  height: 500px;
+  height: 350px;
   width: 100%;
   background-color: #004a99;
   color: #ffffff;
