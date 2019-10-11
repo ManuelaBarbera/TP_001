@@ -199,7 +199,39 @@ span {
 .choose {
   height: 950px;
   width: 100%;
-  background-color: #004a99; }
+  background-color: #004a99;
+  color: #ffffff;
+  padding: 20px; }
+  .choose p {
+    text-align: center; }
+
+.choosemain {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 900px; }
+  .choosemain .cajaschoose {
+    display: flex;
+    flex-direction: row; }
+
+.cajaindividual {
+  width: 300px;
+  height: 300px;
+  background-color: #00458f;
+  text-align: center;
+  padding-top: 10px;
+  margin: 15px;
+  border-radius: 10px; }
+  .cajaindividual i {
+    color: #bfddfe;
+    font-size: 48px; }
+
+.cajaindividual:hover {
+  background-color: #004289; }
+
+.numeroschoose {
+  display: flex;
+  justify-content: space-between; }
 
 /* ---------------------------------------
 ------------------------------------------
