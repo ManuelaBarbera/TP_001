@@ -261,7 +261,7 @@ p {
 -------------------------------------------*/
 
 .choose {
-    height: 950px;
+    height: 800px;
     width: 100%;
     background-color: $color10; 
     color: $color1;
@@ -277,12 +277,13 @@ p {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    width: 900px;
+    
     
     
 .cajaschoose {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     }
 }
 
@@ -291,7 +292,7 @@ p {
     height: 300px;
     background-color: $color15;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     margin: 15px;
     border-radius: 10px;
 
@@ -305,8 +306,11 @@ p {
     background-color: $color5;
 }
 .numeroschoose {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    
 }
 
 
