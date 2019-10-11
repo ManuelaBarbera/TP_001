@@ -349,7 +349,8 @@ i:hover {
     width: 100%;
     background-color: $color10; 
     color: $color1;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     h3{
         font-size: 36px;
@@ -494,11 +495,13 @@ i:hover {
 #team {
 	height: auto;
 	width: 100%;
-	background-color: $color1; 
+    background-color: $color1;
+    padding-top: 20px;
+    padding-bottom: 20px; 
 	display: flex;
 	flex-direction: column;
     align-items: center;
-    h3{
+    h3 {
         @include formato-titulo;
     }
 }
@@ -597,9 +600,10 @@ i:hover {
 .clients {
     height: 600px;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: $color13; 
-    padding: 50px;
-    h3{
+     h3{
         @include formato-titulo;
     }
     }
@@ -650,10 +654,12 @@ i:hover {
 -------------------------------------------*/
 
 #contact {
-    height: auto;
+    height: 550px;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: $color1;
-    padding: 50px;
+    
 
     h3{
         @include formato-titulo;
@@ -683,7 +689,7 @@ i:hover {
 }
 
 .columna2 {
-    width: 600px;
+    width: 500px;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -748,12 +754,9 @@ input {
 footer {
     height: 350px;
     width: 100%;
+    padding-top: 20px;
     background-color: $color10;
     color: $color1; 
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
     display: flex;
 
         }

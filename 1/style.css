@@ -263,7 +263,8 @@ i:hover {
   width: 100%;
   background-color: #004a99;
   color: #ffffff;
-  padding: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .choose h3 {
     font-size: 36px;
     font-weight: 500;
@@ -377,6 +378,8 @@ i:hover {
   height: auto;
   width: 100%;
   background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -468,8 +471,9 @@ i:hover {
 .clients {
   height: 600px;
   width: 100%;
-  background-color: #ecf5ff;
-  padding: 50px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ecf5ff; }
   .clients h3 {
     color: #283d50;
     font-size: 36px;
@@ -511,10 +515,11 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #contact {
-  height: auto;
+  height: 550px;
   width: 100%;
-  background-color: #ffffff;
-  padding: 50px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff; }
   #contact h3 {
     color: #283d50;
     font-size: 36px;
@@ -537,7 +542,7 @@ i:hover {
     width: auto; }
 
 .columna2 {
-  width: 600px;
+  width: 500px;
   height: 50px;
   display: flex;
   flex-direction: column; }
@@ -582,12 +587,9 @@ input {
 footer {
   height: 350px;
   width: 100%;
+  padding-top: 20px;
   background-color: #004a99;
   color: #ffffff;
-  padding-right: 200px;
-  padding-left: 200px;
-  padding-top: 100px;
-  padding-bottom: 100px;
   display: flex; }
 
 .bloque1 {
