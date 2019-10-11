@@ -130,12 +130,20 @@ span {
 #about {
   width: 100%;
   background-color: #ffffff;
+  padding: 70px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #about p {
     font-size: 15px;
     text-align: center; }
+    #about p .bloqueabout1 {
+      width: 500px;
+      display: flex; }
+
+.imgabout {
+  width: 20%;
+  height: auto; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -147,7 +155,7 @@ span {
   width: 100%;
   background-color: #ecf5ff;
   padding-top: 30px;
-  padding-left: 200px;
+  padding-left: 100px;
   padding-right: 200px;
   display: flex;
   flex-direction: column;
