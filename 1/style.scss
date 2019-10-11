@@ -162,7 +162,8 @@ span{
 #about {
     width: 100%;
     background-color: $color1;
-        
+    padding-bottom: 40px;
+            
    
 .tituloabout {   
     display: flex;
@@ -175,8 +176,8 @@ p {
 
 }
 }
-
 }
+
 .bloqueabout {
     padding-top: 20px;
     display: flex;
@@ -184,12 +185,29 @@ p {
 
 }
 
-#textoabout {
+.textoabout {
     width: 450px;
+    padding-left: 50px;
+    padding-right: 50px;
     
+    .subtituloabout {
+        font-size: 24px;
+    }
+   
 }
-.imgabout {
+
+.imgabout1 {
+    width: 40%;
+    height: auto;
+}
+
+.imgabout2 {
     width: 45%;
+    height: auto;
+}
+
+.imgabout3 {
+    width: 40%;
     height: auto;
 }
 
