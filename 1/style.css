@@ -129,20 +129,24 @@ span {
 -------------------------------------------*/
 #about {
   width: 100%;
-  background-color: #ffffff;
-  padding: 70px;
+  background-color: #ffffff; }
+  #about .tituloabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about .tituloabout p {
+      font-size: 15px; }
+
+.bloqueabout {
+  padding-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #about p {
-    font-size: 15px;
-    text-align: center; }
-    #about p .bloqueabout1 {
-      width: 500px;
-      display: flex; }
+  justify-content: center; }
+
+#textoabout {
+  width: 450px; }
 
 .imgabout {
-  width: 20%;
+  width: 45%;
   height: auto; }
 
 /* ---------------------------------------

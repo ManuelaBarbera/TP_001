@@ -162,28 +162,34 @@ span{
 #about {
     width: 100%;
     background-color: $color1;
-    padding: 70px;
+        
+   
+.tituloabout {   
     display: flex;
     flex-direction: column;
     align-items: center;
 
 p { 
     font-size: 15px;
-    text-align: center;
+   
 
-.bloqueabout1 {
-    width: 500px;
+}
+}
+
+}
+.bloqueabout {
+    padding-top: 20px;
     display: flex;
+    justify-content: center;
+
+}
+
+#textoabout {
+    width: 450px;
     
-    }
-
 }
-
-}
-
-
 .imgabout {
-    width: 20%;
+    width: 45%;
     height: auto;
 }
 
