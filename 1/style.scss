@@ -189,8 +189,40 @@ p {
 
 }
 
+.subbloqueabout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+.circuloicono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid $color3;
+    margin: 2px;   
+    
+}
+
+    i {
+        color: $color3;
+        font-size: 30px;
+    }
+}
+
+
+.circuloicono:hover {
+    background-color: $color3;
+    }
+
+i:hover {
+    color: $color1;
+}    
+
 .textoabout {
-    width: 450px;
+    width: 550px;
     padding-left: 50px;
     padding-right: 50px;
     
@@ -214,9 +246,6 @@ p {
     width: 40%;
     height: auto;
 }
-
-
-
 
 
 /* ---------------------------------------
