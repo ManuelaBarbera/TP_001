@@ -11,7 +11,6 @@ body {
 -------------------------------------------*/
 nav {
   background-color: #ffffff;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #004289;
@@ -21,10 +20,8 @@ nav {
   position: fixed;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
-
-nav div {
-  padding-left: 20px; }
+  align-items: center;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
 
 .img-logo img {
   height: 25px;
@@ -37,12 +34,6 @@ nav div {
 
 .links-header a:hover {
   color: #007bff; }
-
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 0%; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -131,12 +122,21 @@ span {
   width: 100%;
   background-color: #ffffff;
   padding-bottom: 40px; }
-  #about .tituloabout {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #about .tituloabout p {
-      font-size: 15px; }
+  #about h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+  #about p {
+    font-size: 15px;
+    color: #556877;
+    font-family: "Open Sans", sans-serif; }
+
+.tituloabout {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .bloqueabout {
   padding-top: 20px;
@@ -198,6 +198,12 @@ i:hover {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #services h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
   #services p {
     text-align: center; }
 
@@ -258,6 +264,10 @@ i:hover {
   background-color: #004a99;
   color: #ffffff;
   padding: 20px; }
+  .choose h3 {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center; }
   .choose p {
     text-align: center; }
 
@@ -296,20 +306,49 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #portfolio {
-  height: 1260px;
   width: 100%;
+  height: auto;
   background-color: #ffffff; }
+  #portfolio h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
+  #portfolio ul {
+    display: block;
+    text-align: center; }
+  #portfolio .botones-portfolio ul li {
+    margin: 15px 15px 15px 0;
+    padding: 6px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #007bff;
+    border-radius: 50px;
+    background: #ecf5ff;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center; }
+  #portfolio .bp:hover {
+    background-color: #007bff;
+    color: #ffffff; }
 
 /* ---------------------------------------
 ------------------------------------------
                 TESTIMONIALS 
 -------------------------------------------
 -------------------------------------------*/
-.testimonials {
-  height: 400px;
+#testimonials {
   width: 100%;
   background-color: #ecf5ff;
-  padding-top: 10px; }
+  padding: 60px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+  #testimonials h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
 
 .content-testimonials {
   padding-right: 280px;
@@ -335,12 +374,18 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #team {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #team h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
 
 .fotosteam {
   display: flex; }
@@ -425,6 +470,12 @@ i:hover {
   width: 100%;
   background-color: #ecf5ff;
   padding: 50px; }
+  .clients h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
 
 .clients p {
   text-align: center; }
@@ -460,24 +511,30 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #contact {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
   padding: 50px; }
+  #contact h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
   #contact .contactustotal {
     display: flex; }
-    #contact .contactustotal .columna1 {
-      margin: 20px; }
-      #contact .contactustotal .columna1 .mapouter {
-        position: relative;
-        text-align: right;
-        height: 350px;
-        width: 500px; }
-        #contact .contactustotal .columna1 .mapouter .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 350px;
-          width: 500px; }
+  #contact .columna1 {
+    margin: 20px; }
+  #contact .mapouter {
+    position: relative;
+    text-align: right;
+    height: 350px;
+    width: auto; }
+  #contact .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 350px;
+    width: auto; }
 
 .columna2 {
   width: 600px;
