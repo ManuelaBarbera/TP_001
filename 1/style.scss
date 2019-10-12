@@ -661,7 +661,7 @@ i:hover {
     background-color: $color1;
     
 
-    h3{
+    h3 {
         @include formato-titulo;
     }
     
@@ -670,7 +670,7 @@ i:hover {
         justify-content: center;
         
     }
-        .columna1{
+        .columna1 {
             margin: 20px;
 
         }  
@@ -722,20 +722,24 @@ i:hover {
     }
 
 
-.form {
+.formulario {
     display: flex;
+    flex-direction: column;
+    
     
 }
 
 .cajainputs {
     display: flex;
-    }
+    
+}
 
 .primerinputa {
     width: 300px;
     height: 30px;
     margin-bottom: 10px;
     margin-right: 5px;
+    box-shadow: none;
 }
 
 .primerinputb {
@@ -745,9 +749,10 @@ i:hover {
 }
 .segundoinput {
     height: 30px;
-    width: 600px;
+    width: 495px;
     margin-bottom: 10px;
 }
+
 
 .sendmessage {
     height: 40px;
@@ -757,6 +762,7 @@ i:hover {
     border: 0;
     border-radius: 20px;
     transition: 0.3s;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -799,7 +805,7 @@ footer {
         width: 350px;
         font-size: 13px;
         line-height: 24px;
-        margin: 2px;
+        margin-right: 5px;
 
       h4 {
             font-size: 34px;
@@ -809,6 +815,7 @@ footer {
 .links {
        width: 200px;
        margin: 2px;
+       line-height: 2;
 
     h4 {
             font-size: 14px;
@@ -818,7 +825,19 @@ footer {
 
     }
 
+    .linksdatos {
+        font-size: 14px;
+    color: #ecf5ff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.linksdatos:hover {
+    color: $color3;
+}
+
 .textodatos {
+    font-family: $font2;
     font-size: 14px;
 }
 
@@ -852,7 +871,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 2px;
-
+    transition: 0.5s;
 }
 
 .bolaicono:hover {
@@ -861,24 +880,39 @@ footer {
 }
 
 .newsletter {
-        width: 200px;
+        width: 300px;
 
         h4 {
             font-size: 14px;
             font-weight: bold;
         
+           
             }
     }
 
+form {
+    display: flex;
+}   
+    
+.bloqueemail  {
 
+    padding: 6px 8px;
+    width: 220px;
+
+}
  .botonsubmit {
      background-color: $color3;
      color: $color1;
      border: 0;
-     width: 35%;
+     width: 80px;
      padding: 6px 0;
      cursor: pointer;
+     transition: 0.5s;
  }   
+
+ .botonsubmit:hover {
+     background-color: $color10;
+ }
 
 /* ---------------------------------------
 ------------------------------------------

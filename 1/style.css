@@ -562,8 +562,9 @@ i:hover {
   justify-content: center;
   align-items: center; }
 
-.form {
-  display: flex; }
+.formulario {
+  display: flex;
+  flex-direction: column; }
 
 .cajainputs {
   display: flex; }
@@ -572,7 +573,8 @@ i:hover {
   width: 300px;
   height: 30px;
   margin-bottom: 10px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  box-shadow: none; }
 
 .primerinputb {
   width: 300px;
@@ -581,7 +583,7 @@ i:hover {
 
 .segundoinput {
   height: 30px;
-  width: 600px;
+  width: 495px;
   margin-bottom: 10px; }
 
 .sendmessage {
@@ -592,6 +594,7 @@ i:hover {
   border: 0;
   border-radius: 20px;
   transition: 0.3s;
+  margin-top: 15px;
   margin-bottom: 10px; }
 
 .sendmessage:hover {
@@ -623,18 +626,29 @@ footer {
   width: 350px;
   font-size: 13px;
   line-height: 24px;
-  margin: 2px; }
+  margin-right: 5px; }
   .wayne h4 {
     font-size: 34px; }
 
 .links {
   width: 200px;
-  margin: 2px; }
+  margin: 2px;
+  line-height: 2; }
   .links h4 {
     font-size: 14px;
     font-weight: bold; }
 
+.linksdatos {
+  font-size: 14px;
+  color: #ecf5ff;
+  text-decoration: none;
+  transition: 0.5s; }
+
+.linksdatos:hover {
+  color: #007bff; }
+
 .textodatos {
+  font-family: "Open Sans", sans-serif;
   font-size: 14px; }
 
 .contactus {
@@ -657,25 +671,37 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2px; }
+  margin: 2px;
+  transition: 0.5s; }
 
 .bolaicono:hover {
   background-color: #004a99;
   cursor: pointer; }
 
 .newsletter {
-  width: 200px; }
+  width: 300px; }
   .newsletter h4 {
     font-size: 14px;
     font-weight: bold; }
+
+form {
+  display: flex; }
+
+.bloqueemail {
+  padding: 6px 8px;
+  width: 220px; }
 
 .botonsubmit {
   background-color: #007bff;
   color: #ffffff;
   border: 0;
-  width: 35%;
+  width: 80px;
   padding: 6px 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.5s; }
+
+.botonsubmit:hover {
+  background-color: #004a99; }
 
 /* ---------------------------------------
 ------------------------------------------
