@@ -31,10 +31,18 @@ $icon: 64px;
     font-family: $font1;
     text-align: center;
 }
+@mixin formato-back-port{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px;
+}
 
 body{
     font-family: $font1; 
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /* ---------------------------------------
@@ -43,13 +51,13 @@ body{
 -------------------------------------------
 -------------------------------------------*/
 nav {
+    box-sizing: border-box; 
     background-color: $color1;
     font-size: 14px;
     font-weight: 500;   
     color: $color5;
     height: auto;
     width: 100%;
-    padding: 20px 10px;
     position: fixed;
     display: flex;
     justify-content: space-around;  
@@ -59,13 +67,14 @@ nav {
 
 .img-logo img{
     height:25px; 
-    width: auto;  
-    margin-right: 200px;  
+    width: auto; 
+    padding: 15px; 
 }
 
 .links-header a{
     text-decoration: none;
-    transition: all 0.4s;
+    transition: all 0.3s;
+    padding: 15px;
 }
 .links-header a:hover{
     color: $color3;
@@ -415,29 +424,76 @@ i:hover {
     width: 100%;
     height: auto;
     background-color: $color1;
-    
+    display: flex;
+    flex-direction: column;
+
     h3{
         @include formato-titulo;
     }
+
     ul{
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content:center;
+        align-items: center;
     }
-    .botones-portfolio ul li{
-    margin: 15px 15px 15px 0;
+    .botones-portfolio ul li {
+    margin: 15px;
     padding: 6px 20px;
     font-size: 12px;
     line-height: 20px;
     color: $color3;
     border-radius: 50px;
     background: $color13;
-    margin-bottom: 5px;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     }
     .bp:hover{
         background-color: $color3;
         color: $color1;
+    }
+
+    .img-portfolio {
+        display: flex; 
+        flex-wrap: wrap;
+        align-content: center;
+        .img-app1{
+            background-image: url("img/portfolio/app1.jpg");
+            @include formato-back-port;
+        }
+        .img-app2{
+            background-image: url("img/portfolio/web3.jpg");
+            @include formato-back-port;
+        }
+        .img-app3{
+            background-image: url("img/portfolio/app2.jpg");
+            @include formato-back-port;
+            
+        }
+        .img-app4{
+            background-image: url("img/portfolio/card2.jpg");
+            @include formato-back-port;
+        }
+        .img-app5{
+            background-image: url("img/portfolio/web2.jpg");
+            @include formato-back-port;
+        }
+        .img-app6{
+            background-image: url("img/portfolio/app3.jpg");
+            @include formato-back-port;
+        }
+        .img-app7{
+            background-image: url("img/portfolio/card1.jpg");
+            @include formato-back-port;
+        }
+        .img-app8{
+            background-image: url("img/portfolio/card3.jpg");
+            @include formato-back-port;
+        }
+        .img-app9{
+            background-image: url("img/portfolio/web1.jpg");
+            @include formato-back-port;
+        }
     }
    
 

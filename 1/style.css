@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 0; }
+  margin: 0;
+  scroll-behavior: smooth; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -10,13 +11,13 @@ body {
 -------------------------------------------
 -------------------------------------------*/
 nav {
+  box-sizing: border-box;
   background-color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   color: #004289;
   height: auto;
   width: 100%;
-  padding: 20px 10px;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -26,11 +27,12 @@ nav {
 .img-logo img {
   height: 25px;
   width: auto;
-  margin-right: 200px; }
+  padding: 15px; }
 
 .links-header a {
   text-decoration: none;
-  transition: all 0.4s; }
+  transition: all 0.3s;
+  padding: 15px; }
 
 .links-header a:hover {
   color: #007bff; }
@@ -309,7 +311,9 @@ i:hover {
 #portfolio {
   width: 100%;
   height: auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; }
   #portfolio h3 {
     color: #283d50;
     font-size: 36px;
@@ -317,22 +321,90 @@ i:hover {
     font-family: "Montserrat", sans-serif;
     text-align: center; }
   #portfolio ul {
-    display: block;
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #portfolio .botones-portfolio ul li {
-    margin: 15px 15px 15px 0;
+    margin: 15px;
     padding: 6px 20px;
     font-size: 12px;
     line-height: 20px;
     color: #007bff;
     border-radius: 50px;
     background: #ecf5ff;
-    margin-bottom: 5px;
-    display: inline-block;
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #portfolio .bp:hover {
     background-color: #007bff;
     color: #ffffff; }
+  #portfolio .img-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; }
+    #portfolio .img-portfolio .img-app1 {
+      background-image: url("img/portfolio/app1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app2 {
+      background-image: url("img/portfolio/web3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app3 {
+      background-image: url("img/portfolio/app2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app4 {
+      background-image: url("img/portfolio/card2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app5 {
+      background-image: url("img/portfolio/web2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app6 {
+      background-image: url("img/portfolio/app3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app7 {
+      background-image: url("img/portfolio/card1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app8 {
+      background-image: url("img/portfolio/card3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
+    #portfolio .img-portfolio .img-app9 {
+      background-image: url("img/portfolio/web1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 330px;
+      height: 250px;
+      margin: 20px; }
 
 /* ---------------------------------------
 ------------------------------------------
