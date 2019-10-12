@@ -758,38 +758,107 @@ footer {
     background-color: $color10;
     color: $color1; 
     display: flex;
+    justify-content: center;
 
-        }
+}
 
-    .bloque1 {
+.bloque1 {
         display: flex;
         flex-direction: row;
+        
     
     }
 
-    .bloque2 {
+.bloque2 {
         display: flex;
         flex-direction: row;
         
     }
 
-    .wayne {
-        width: 300px;
+.wayne {
+        width: 350px;
         font-size: 13px;
-    line-height: 24px;
+        line-height: 24px;
+        margin: 2px;
+
+      h4 {
+            font-size: 34px;
+        }
     }
 
-    .links {
-        width: 100px;
+.links {
+       width: 200px;
+       margin: 2px;
+
+    h4 {
+            font-size: 14px;
+            font-weight: bold;
+        
+        }
+
     }
 
-    .contactus {
+.textodatos {
+    font-size: 14px;
+}
+
+.contactus {
         width: 200px;
+
+
+        h4 {
+            font-size: 14px;
+            font-weight: bold;
+             
+            
+        }
+        }
+
+.datos {
+            line-height: 26px;
+        
+            }
+
+.contenedoriconos {
+    display: flex;
+}
+
+.bolaicono {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: $color3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+
+}
+
+.bolaicono:hover {
+    background-color: $color10;
+    cursor: pointer;
+}
+
+.newsletter {
+        width: 200px;
+
+        h4 {
+            font-size: 14px;
+            font-weight: bold;
+        
+            }
     }
 
-    .newsletter {
-        width: 200px
-    }
+
+ .botonsubmit {
+     background-color: $color3;
+     color: $color1;
+     border: 0;
+     width: 35%;
+     padding: 6px 0;
+     cursor: pointer;
+ }   
 
 /* ---------------------------------------
 ------------------------------------------

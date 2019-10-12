@@ -590,7 +590,8 @@ footer {
   padding-top: 20px;
   background-color: #004a99;
   color: #ffffff;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .bloque1 {
   display: flex;
@@ -601,18 +602,62 @@ footer {
   flex-direction: row; }
 
 .wayne {
-  width: 300px;
+  width: 350px;
   font-size: 13px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin: 2px; }
+  .wayne h4 {
+    font-size: 34px; }
 
 .links {
-  width: 100px; }
+  width: 200px;
+  margin: 2px; }
+  .links h4 {
+    font-size: 14px;
+    font-weight: bold; }
+
+.textodatos {
+  font-size: 14px; }
 
 .contactus {
   width: 200px; }
+  .contactus h4 {
+    font-size: 14px;
+    font-weight: bold; }
+
+.datos {
+  line-height: 26px; }
+
+.contenedoriconos {
+  display: flex; }
+
+.bolaicono {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px; }
+
+.bolaicono:hover {
+  background-color: #004a99;
+  cursor: pointer; }
 
 .newsletter {
   width: 200px; }
+  .newsletter h4 {
+    font-size: 14px;
+    font-weight: bold; }
+
+.botonsubmit {
+  background-color: #007bff;
+  color: #ffffff;
+  border: 0;
+  width: 35%;
+  padding: 6px 0;
+  cursor: pointer; }
 
 /* ---------------------------------------
 ------------------------------------------
