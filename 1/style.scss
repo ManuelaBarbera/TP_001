@@ -667,6 +667,8 @@ i:hover {
     
     .contactustotal {
         display:flex;
+        justify-content: center;
+        
     }
         .columna1{
             margin: 20px;
@@ -699,36 +701,52 @@ i:hover {
     margin-bottom: 20px;
     display: flex;
 
-          i {
-            color: $color3;
-                      
+ i {
+     color: $color3;
+    
+
     p {
         color: $color6;
+        line-height: 28px;
+        font-size: 14px;
+           
     }
-    
+}   
 }
-                    }
-
-
 }
+
+.cajitaicono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
 
 .form {
     display: flex;
     
 }
 
-input {
-    padding-left: 5px;
-}
+.cajainputs {
+    display: flex;
+    }
 
-.primerinput {
+.primerinputa {
     width: 300px;
     height: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
+.primerinputb {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+}
 .segundoinput {
     height: 30px;
     width: 600px;
+    margin-bottom: 10px;
 }
 
 .sendmessage {
@@ -736,8 +754,10 @@ input {
     width: 140px;
     background-color: $color3;
     color: $color1;
+    border: 0;
     border-radius: 20px;
     transition: 0.3s;
+    margin-bottom: 10px;
 }
 
 .sendmessage:hover {
@@ -879,4 +899,3 @@ footer {
         font-weight: bolder;
     }
 }
-
