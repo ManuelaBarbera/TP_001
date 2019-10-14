@@ -621,44 +621,36 @@ i:hover {
   flex-direction: column; }
   .columna2 .infocontacto {
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
 
 .cajitaicono {
-  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .cajitaicono i {
-    padding-right: 10px;
-    color: #007bff; }
-
-.datoscolumna2 {
-  font-size: 14px;
-  color: #283d50; }
 
 .formulario {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .cajainputs {
   display: flex; }
 
 .primerinputa {
-  width: 320px;
+  width: 350px;
   height: 30px;
   margin-bottom: 10px;
   margin-right: 5px;
   box-shadow: none; }
 
 .primerinputb {
-  width: 320px;
+  width: 350px;
   height: 30px;
   margin-bottom: 10px; }
 
 .segundoinput {
   height: 30px;
-  width: 650px;
+  width: 495px;
   margin-bottom: 10px; }
 
 .sendmessage {

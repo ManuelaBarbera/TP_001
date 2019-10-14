@@ -747,7 +747,7 @@ i:hover {
 }
 
 .columna2 {
-    width: 500px;
+    width: 700px;
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -756,42 +756,47 @@ i:hover {
         
     margin-bottom: 20px;
     display: flex;
-
- i {
-     color: $color3;
-    
-
-    p {
-        color: $color6;
-        line-height: 28px;
-        font-size: 14px;
-           
-    }
-}   
+    justify-content: space-between;
+   
 }
 }
+
 
 .cajitaicono {
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
+i {
+    padding-right: 10px;
+    color: $color3;
+
+}
+
     }
 
+    .datoscolumna2 {
+    font-size: 14px;
+     color: $color6;
+    
+    }
 
 .formulario {
     display: flex;
     flex-direction: column;
     
-    
-}
+
+    }
 
 .cajainputs {
     display: flex;
-    
+       
 }
 
 .primerinputa {
-    width: 300px;
+    width: 320px;
     height: 30px;
     margin-bottom: 10px;
     margin-right: 5px;
@@ -799,13 +804,13 @@ i:hover {
 }
 
 .primerinputb {
-    width: 300px;
+    width: 320px;
     height: 30px;
     margin-bottom: 10px;
 }
 .segundoinput {
     height: 30px;
-    width: 495px;
+    width: 650px;
     margin-bottom: 10px;
 }
 
@@ -985,7 +990,6 @@ form {
     font-weight: 400;
     line-height: 1.5;
 
-    p span { 
-        font-weight: bolder;
-    }
-}
+
+
+  }
