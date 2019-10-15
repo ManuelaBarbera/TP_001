@@ -700,9 +700,10 @@ footer {
   width: 100%;
   padding-top: 20px;
   background-color: #004a99;
-  color: #ffffff;
-  display: flex;
-  justify-content: center; }
+  color: #ffffff; }
+  footer .footercontainer {
+    display: flex;
+    justify-content: center; }
 
 .bloque1 {
   display: flex;
@@ -792,6 +793,18 @@ form {
 
 .botonsubmit:hover {
   background-color: #004a99; }
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .footercontainer {
+    flex-direction: column; } }
+
+@media (max-width: 600px) {
+  .footercontainer {
+    flex-direction: column; }
+  .bloque1 {
+    flex-direction: column; }
+  .bloque2 {
+    flex-direction: column; } }
 
 /* ---------------------------------------
 ------------------------------------------

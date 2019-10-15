@@ -861,9 +861,12 @@ footer {
     padding-top: 20px;
     background-color: $color10;
     color: $color1; 
-    display: flex;
-    justify-content: center;
+    
 
+    .footercontainer {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .bloque1 {
@@ -991,6 +994,29 @@ form {
  .botonsubmit:hover {
      background-color: $color10;
  }
+
+ @media (min-width: 601px)and(max-width:800px) {
+     
+    .footercontainer {     
+         flex-direction: column;
+ }
+}
+
+
+@media (max-width:600px) {
+    .footercontainer {
+        flex-direction: column;
+    }
+    
+    .bloque1 {
+    flex-direction: column;
+
+} 
+
+.bloque2 {
+    flex-direction: column;
+}
+}
 
 /* ---------------------------------------
 ------------------------------------------
