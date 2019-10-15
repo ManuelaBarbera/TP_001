@@ -55,17 +55,19 @@ nav {
   padding-top: 14%;
   padding-left: 12%;
   margin-bottom: 40px; }
-  .titulo h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 48px;
-    font-weight: bolder;
-    color: #ffffff;
-    text-align: left;
-    margin: 0px 0px 40px 0px; }
-    .titulo h1 span {
-      color: #74b5fc;
-      text-decoration: underline;
-      font-weight: bolder; }
+
+.texto-provide {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: left;
+  margin: 0px 0px 40px 0px; }
+
+.resaltado-provide {
+  color: #74b5fc;
+  text-decoration: underline;
+  font-weight: bolder; }
 
 .boton-main1 {
   background-color: #007bff;
@@ -123,21 +125,22 @@ nav {
   width: 100%;
   background-color: #ffffff;
   padding-bottom: 40px; }
-  #about h3 {
-    color: #283d50;
-    font-size: 36px;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    text-align: center; }
-  #about p {
-    font-size: 15px;
-    color: #556877;
-    font-family: "Open Sans", sans-serif; }
+
+.subtitulo-about-us {
+  color: #283d50;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
 
 .tituloabout {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .tituloabout p {
+    font-size: 15px;
+    color: #556877;
+    font-family: "Open Sans", sans-serif; }
 
 .bloqueabout {
   padding-top: 20px;
@@ -148,17 +151,18 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center; }
-  .subbloqueabout .circuloicono {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 60px;
-    border-radius: 50px;
-    border: 2px solid #007bff;
-    margin: 2px;
-    margin-right: 5px; }
-  .subbloqueabout i {
+
+.circuloicono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 60px;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  margin: 2px;
+  margin-right: 5px; }
+  .circuloicono i {
     color: #007bff;
     font-size: 30px; }
 
@@ -206,8 +210,8 @@ i:hover {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     text-align: center; }
-  #services p {
-    text-align: center; }
+    #services h3 p {
+      text-align: center; }
 
 .contenedorcajas {
   display: flex;
@@ -271,8 +275,8 @@ i:hover {
     font-size: 36px;
     font-weight: 500;
     text-align: center; }
-  .choose p {
-    text-align: center; }
+    .choose h3 p {
+      text-align: center; }
 
 .choosemain {
   display: flex;
@@ -331,97 +335,102 @@ i:hover {
   background-color: #ffffff;
   display: flex;
   flex-direction: column; }
-  #portfolio h3 {
-    color: #283d50;
-    font-size: 36px;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    text-align: center; }
-  #portfolio ul {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  #portfolio .botones-portfolio ul li {
-    margin: 15px;
-    padding: 6px 20px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #007bff;
-    border-radius: 50px;
-    background: #ecf5ff;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  #portfolio .bp:hover {
-    background-color: #007bff;
-    color: #ffffff; }
-  #portfolio .img-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center; }
-    #portfolio .img-portfolio .img-app1 {
-      background-image: url("img/portfolio/app1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app2 {
-      background-image: url("img/portfolio/web3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app3 {
-      background-image: url("img/portfolio/app2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app4 {
-      background-image: url("img/portfolio/card2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app5 {
-      background-image: url("img/portfolio/web2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app6 {
-      background-image: url("img/portfolio/app3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app7 {
-      background-image: url("img/portfolio/card1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app8 {
-      background-image: url("img/portfolio/card3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
-    #portfolio .img-portfolio .img-app9 {
-      background-image: url("img/portfolio/web1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 250px;
-      margin: 20px; }
+
+.titulo-portfolio {
+  color: #283d50;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+
+.botones-portfolio ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.botones-portfolio ul li {
+  margin: 15px;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #007bff;
+  border-radius: 50px;
+  background: #ecf5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.bp:hover {
+  background-color: #007bff;
+  color: #ffffff; }
+
+.img-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; }
+  .img-portfolio .img-app1 {
+    background-image: url("img/portfolio/app1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app2 {
+    background-image: url("img/portfolio/web3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app3 {
+    background-image: url("img/portfolio/app2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app4 {
+    background-image: url("img/portfolio/card2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app5 {
+    background-image: url("img/portfolio/web2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app6 {
+    background-image: url("img/portfolio/app3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app7 {
+    background-image: url("img/portfolio/card1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app8 {
+    background-image: url("img/portfolio/card3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
+  .img-portfolio .img-app9 {
+    background-image: url("img/portfolio/web1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 250px;
+    margin: 20px; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -617,25 +626,23 @@ i:hover {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     text-align: center; }
-  #contact .contactustotal {
-    display: flex;
-    justify-content: center; }
-  #contact .columna1 {
+
+.contactustotal {
+  display: flex; }
+  .contactustotal .columna1 {
     margin: 20px; }
-  #contact .mapouter {
+  .contactustotal .mapouter {
     position: relative;
     text-align: right;
     height: 350px;
     width: auto; }
-  #contact .gmap_canvas {
+  .contactustotal .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 350px;
     width: auto; }
 
 .columna2 {
-  width: 700px;
-  height: 50px;
   display: flex;
   flex-direction: column; }
   .columna2 .infocontacto {
@@ -644,7 +651,6 @@ i:hover {
     justify-content: space-between; }
 
 .cajitaicono {
-  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -662,7 +668,7 @@ i:hover {
   align-items: center; }
 
 .primerinput-a {
-  width: 318px;
+  width: 300px;
   height: 30px;
   margin-bottom: 10px;
   margin-right: 5px;
@@ -670,14 +676,14 @@ i:hover {
   padding-left: 5px; }
 
 .primerinput-b {
-  width: 318px;
+  width: 300px;
   height: 30px;
   margin-bottom: 10px;
   padding-left: 5px; }
 
 .segundoinput {
   height: 30px;
-  width: 653px;
+  width: 620px;
   margin-bottom: 10px;
   padding-left: 5px; }
 
@@ -824,7 +830,7 @@ form {
   .bloque2 {
     flex-direction: column; } }
 
-/* ---------------------------------------
+/* --------------------------------------
 ------------------------------------------
                  COPYRIGHT 
 -------------------------------------------
@@ -838,5 +844,6 @@ form {
   padding-top: 20px;
   font-weight: 400;
   line-height: 1.5; }
-  .copyright span {
-    font-weight: bold; }
+
+.destacado-wayne {
+  font-weight: bold; }

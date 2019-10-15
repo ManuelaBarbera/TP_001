@@ -93,7 +93,7 @@ nav {
 #intro {
     height: 630px;
     width: 100%;
-    background-color: $color2
+    background-color: $color2;
 }
 
 .titulo {
@@ -103,28 +103,24 @@ nav {
     padding-top: 14%;
     padding-left: 12%;
     margin-bottom: 40px;
+}
 
 
-h1 {
+.texto-provide {
     font-family: $font1; 
     font-size: 48px;
     font-weight: bolder;
     color: $color1; 
     text-align: left;
     margin: 0px 0px 40px 0px;
-    
+
+}   
 
 
-span {
+.resaltado-provide {
     color: $color4;
     text-decoration: underline;
     font-weight: bolder;
-
-}
-
-
-}
-
 
 }
 
@@ -170,6 +166,7 @@ span {
     float: right;
     padding-top: 13%;
     padding-right: 12%;
+    
 }
 .imgventanas img {
     width: 100%;
@@ -185,21 +182,26 @@ span {
 #about {
     width: 100%;
     background-color: $color1;
-    padding-bottom: 40px;
-    h3{
+    padding-bottom: 40px; 
+    
+    }
+    
+.subtitulo-about-us {
         @include formato-titulo;
-    }
-    p{
-        font-size: 15px;
-        color: $color7;
-        font-family: $font2;
-    }
-}     
+        
+        }
+   
+ 
    
 .tituloabout {   
     display: flex;
     flex-direction: column;
     align-items: center;
+    p{
+        font-size: 15px;
+        color: $color7;
+        font-family: $font2;
+    }
 }
 
 
@@ -214,6 +216,7 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
+   } 
 
 .circuloicono {
     display: flex;
@@ -226,14 +229,13 @@ span {
     margin: 2px;
     margin-right: 5px;   
     
-}
-
     i {
         color: $color3;
         font-size: 30px;
     }
-}
 
+
+}
 
 .circuloicono:hover {
     background-color: $color3;
@@ -286,12 +288,14 @@ i:hover {
 
     h3{
         @include formato-titulo;
-    }
+    
 
     p {
         text-align: center;
     }
-     
+    
+
+    } 
     
 }
 
@@ -376,12 +380,14 @@ i:hover {
         font-size: 36px;
         font-weight: 500;
         text-align: center;
-    }
+    
 
    p {
        text-align: center;
    }
     
+
+    }
 }
 
 .choosemain {
@@ -461,16 +467,20 @@ i:hover {
     background-color: $color1;
     display: flex;
     flex-direction: column;
+}
 
-    h3{
+.titulo-portfolio {
         @include formato-titulo;
+    
     }
 
-    ul{
+    .botones-portfolio ul{
         display: flex;
         justify-content:center;
         align-items: center;
-    }
+  
+        }
+
     .botones-portfolio ul li {
     margin: 15px;
     padding: 6px 20px;
@@ -532,7 +542,7 @@ i:hover {
     }
    
 
-}
+
 
 
 
@@ -758,11 +768,10 @@ i:hover {
         @include formato-titulo;
     }
     
+
+    }
     .contactustotal {
         display:flex;
-        justify-content: center;
-        
-    }
         .columna1 {
             margin: 20px;
 
@@ -784,8 +793,7 @@ i:hover {
 }
 
 .columna2 {
-    width: 700px;
-    height: 50px;
+    
     display: flex;
     flex-direction: column;
     
@@ -801,7 +809,7 @@ i:hover {
 
 
 .cajitaicono {
-    width: 500px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -831,7 +839,7 @@ i {
 
 
 .primerinput-a {
-    width: 318px;
+    width: 300px;
     height: 30px;
     margin-bottom: 10px;
     margin-right: 5px;
@@ -840,14 +848,14 @@ i {
 }
 
 .primerinput-b {
-    width: 318px;
+    width: 300px;
     height: 30px;
     margin-bottom: 10px;
     padding-left: 5px;
 }
 .segundoinput {
     height: 30px;
-    width: 653px;
+    width: 620px;
     margin-bottom: 10px;
     padding-left: 5px;
 }
@@ -1034,11 +1042,12 @@ form {
  }
 
  @media (min-width: 601px)and(max-width:800px) {
-     
+	     
     .footercontainer {     
          flex-direction: column;
  }
 }
+
 
 
 @media (max-width:600px) {
@@ -1049,14 +1058,18 @@ form {
     .bloque1 {
     flex-direction: column;
 
+
 } 
+
 
 .bloque2 {
     flex-direction: column;
 }
 }
 
-/* ---------------------------------------
+ 
+
+/* --------------------------------------
 ------------------------------------------
                  COPYRIGHT 
 -------------------------------------------
@@ -1069,10 +1082,10 @@ form {
     color: $color1; 
     padding-top: 20px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.5; 
+    
+    }
 
-span {
+.destacado-wayne {
     font-weight: bold;
 }
-
-  }
