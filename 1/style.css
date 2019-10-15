@@ -620,7 +620,7 @@ i:hover {
   display: flex;
   flex-direction: column; }
   .columna2 .infocontacto {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between; }
 
@@ -639,35 +639,47 @@ i:hover {
 
 .formulario {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
-.cajainputs {
-  display: flex; }
-
-.primerinputa {
-  width: 320px;
+.primerinput-a {
+  width: 318px;
   height: 30px;
   margin-bottom: 10px;
   margin-right: 5px;
-  box-shadow: none; }
+  box-shadow: none;
+  padding-left: 5px; }
 
-.primerinputb {
-  width: 320px;
+.primerinput-b {
+  width: 318px;
   height: 30px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding-left: 5px; }
 
 .segundoinput {
   height: 30px;
-  width: 650px;
-  margin-bottom: 10px; }
+  width: 653px;
+  margin-bottom: 10px;
+  padding-left: 5px; }
+
+textarea {
+  padding-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px; }
+
+input::placeholder {
+  font-size: 14px; }
 
 .sendmessage {
   height: 40px;
-  width: 140px;
+  width: 160px;
   background-color: #007bff;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   border: 0;
   border-radius: 20px;
+  cursor: pointer;
   transition: 0.3s;
   margin-top: 15px;
   margin-bottom: 10px; }

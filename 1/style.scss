@@ -754,7 +754,7 @@ i:hover {
 
     .infocontacto {
         
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
    
@@ -786,42 +786,55 @@ i {
 .formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
+       }
 
-    }
 
-.cajainputs {
-    display: flex;
-       
-}
 
-.primerinputa {
-    width: 320px;
+.primerinput-a {
+    width: 318px;
     height: 30px;
     margin-bottom: 10px;
     margin-right: 5px;
     box-shadow: none;
+    padding-left: 5px;
 }
 
-.primerinputb {
-    width: 320px;
+.primerinput-b {
+    width: 318px;
     height: 30px;
     margin-bottom: 10px;
+    padding-left: 5px;
 }
 .segundoinput {
     height: 30px;
-    width: 650px;
+    width: 653px;
     margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+textarea {
+    padding-left: 5px;
+    font-family: $font1;
+    font-size: 14px;
+    }
+
+input::placeholder {
+    font-size: 14px;
 }
 
 
 .sendmessage {
     height: 40px;
-    width: 140px;
+    width: 160px;
     background-color: $color3;
     color: $color1;
+    font-family: $font2;
+    font-size: 16px;
     border: 0;
     border-radius: 20px;
+    cursor: pointer;
     transition: 0.3s;
     margin-top: 15px;
     margin-bottom: 10px;
