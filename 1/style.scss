@@ -63,6 +63,7 @@ nav {
     justify-content: space-around;  
     align-items: center;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    z-index: 1;
 }
 
 .img-logo img{
@@ -553,7 +554,7 @@ i:hover {
 	width: 100%;
     background-color: $color1;
     padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-bottom: 40px; 
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -654,7 +655,7 @@ i:hover {
 -------------------------------------------*/
 
 .clients {
-    height: 600px;
+    height: 680px;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -666,6 +667,8 @@ i:hover {
 
 .clients p {
     text-align: center;
+    padding-bottom: 30px;
+    color: $color7;
 }    
 
 .bloque1 {
@@ -751,6 +754,7 @@ i:hover {
     height: 50px;
     display: flex;
     flex-direction: column;
+    
 
     .infocontacto {
         
