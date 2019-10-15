@@ -55,19 +55,17 @@ nav {
   padding-top: 14%;
   padding-left: 12%;
   margin-bottom: 40px; }
-
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 48px;
-  font-weight: bolder;
-  color: #ffffff;
-  text-align: left;
-  margin: 0px 0px 40px 0px; }
-
-span {
-  color: #74b5fc;
-  text-decoration: underline;
-  font-weight: bolder; }
+  .titulo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: left;
+    margin: 0px 0px 40px 0px; }
+    .titulo h1 span {
+      color: #74b5fc;
+      text-decoration: underline;
+      font-weight: bolder; }
 
 .boton-main1 {
   background-color: #007bff;
@@ -754,6 +752,8 @@ footer {
 .textodatos {
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+  .textodatos span {
+    font-weight: bold; }
 
 .contactus {
   width: 200px; }
@@ -833,3 +833,5 @@ form {
   padding-top: 20px;
   font-weight: 400;
   line-height: 1.5; }
+  .copyright span {
+    font-weight: bold; }
