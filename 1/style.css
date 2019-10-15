@@ -296,9 +296,21 @@ i:hover {
   .cajaindividual i {
     color: #bfddfe;
     font-size: 48px; }
+    .cajaindividual i h4 {
+      font-size: 22px;
+      font-weight: 600; }
 
 .cajaindividual:hover {
   background-color: #004289; }
+
+.textointermedio {
+  font-size: 15px; }
+
+.leermas {
+  font-weight: 600; }
+
+.leermas:hover {
+  text-decoration: underline; }
 
 .numeroschoose {
   margin-top: 20px;
