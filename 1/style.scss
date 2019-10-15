@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
@@ -430,8 +429,8 @@ i:hover {
 }
 
 .leermas {
-    
-    font-weight: 600;
+        font-weight: 600;
+        cursor: pointer;
 }
 
 .leermas:hover {
@@ -441,8 +440,12 @@ i:hover {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+   
+}
 
-    
+.cifrascontador {
+    font-weight: bold;
+    font-size: 48px;
 }
 
 
