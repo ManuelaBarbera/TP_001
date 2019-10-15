@@ -154,11 +154,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 70px;
+    width: 100px;
+    height: 60px;
     border-radius: 50px;
-    border: 1px solid #007bff;
-    margin: 2px; }
+    border: 2px solid #007bff;
+    margin: 2px;
+    margin-right: 5px; }
   .subbloqueabout i {
     color: #007bff;
     font-size: 30px; }
