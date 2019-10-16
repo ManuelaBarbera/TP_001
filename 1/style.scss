@@ -699,11 +699,12 @@ i:hover {
 -------------------------------------------*/
 
 .clients {
-    height: 680px;
     width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
     background-color: $color13; 
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    
      h3{
         @include formato-titulo;
     }
@@ -715,19 +716,18 @@ i:hover {
     color: $color7;
 }    
 
-.bloque1 {
+.bloque {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     }
 
-.bloque2 {
-    display: flex;
-    justify-content: center;
-    }
+
 
 .cajablanca {
     width: 250px;
-    height: 200px;
+    height: 140px;
     background-color: $color1; 
     margin: 1px;
     display: flex;
@@ -748,6 +748,21 @@ i:hover {
     transform: scale(1.5,1.5);
     }
 }
+
+@media (max-width:600px) {
+
+    .cajablanca {
+
+    width: 420px;
+    height: 160px;
+    }
+
+    .logocliente img {
+    width: 380px;
+    height: auto;
+    }
+        
+ }
 
 
 /* ---------------------------------------

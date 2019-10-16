@@ -567,11 +567,11 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 .clients {
-  height: 680px;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #ecf5ff; }
+  padding-bottom: 80px;
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   .clients h3 {
     color: #283d50;
     font-size: 36px;
@@ -584,17 +584,15 @@ i:hover {
   padding-bottom: 30px;
   color: #556877; }
 
-.bloque1 {
+.bloque {
   display: flex;
-  justify-content: center; }
-
-.bloque2 {
-  display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .cajablanca {
   width: 250px;
-  height: 200px;
+  height: 140px;
   background-color: #ffffff;
   margin: 1px;
   display: flex;
@@ -608,6 +606,14 @@ i:hover {
 
 .logocliente img:hover {
   transform: scale(1.5, 1.5); }
+
+@media (max-width: 600px) {
+  .cajablanca {
+    width: 420px;
+    height: 160px; }
+  .logocliente img {
+    width: 380px;
+    height: auto; } }
 
 /* ---------------------------------------
 ------------------------------------------
