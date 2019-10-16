@@ -581,9 +581,9 @@ i:hover {
     }
 
 .content-testimonials {
-        padding-right: 280px;
-        padding-left: 280px;
-        display: flex;
+    padding-right: 280px;
+    padding-left: 280px;    
+    display: flex;
         justify-content: center;
         align-items: center;
 
@@ -620,7 +620,9 @@ i:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+    
+    }
+
 .dots-testimonials-1 {
     height: 10px;
     width: 10px;
@@ -628,6 +630,7 @@ i:hover {
     cursor: pointer;
     background-color: $color3;
     margin: 5px;
+
 }
 
 .dots-testimonials {
@@ -640,6 +643,21 @@ i:hover {
 }
 
 
+
+@media (min-width: 601px)and(max-width:800px) {
+    .content-testimonials {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    }
+    
+    @media (max-width:600px) { 
+        .content-testimonials {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+    
 
 
 
