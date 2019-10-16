@@ -275,8 +275,8 @@ i:hover {
     font-size: 36px;
     font-weight: 500;
     text-align: center; }
-    .choose h3 p {
-      text-align: center; }
+  .choose p {
+    text-align: center; }
 
 .choosemain {
   display: flex;
@@ -366,12 +366,13 @@ i:hover {
 
 .img-portfolio {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center; }
+  justify-content: center;
+  align-items: center; }
   .img-portfolio .img-app1 {
     background-image: url("img/portfolio/app1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -379,6 +380,7 @@ i:hover {
     background-image: url("img/portfolio/web3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -386,6 +388,7 @@ i:hover {
     background-image: url("img/portfolio/app2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -393,6 +396,7 @@ i:hover {
     background-image: url("img/portfolio/card2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -400,6 +404,7 @@ i:hover {
     background-image: url("img/portfolio/web2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -407,6 +412,7 @@ i:hover {
     background-image: url("img/portfolio/app3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -414,6 +420,7 @@ i:hover {
     background-image: url("img/portfolio/card1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -421,6 +428,7 @@ i:hover {
     background-image: url("img/portfolio/card3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
@@ -428,6 +436,7 @@ i:hover {
     background-image: url("img/portfolio/web1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 330px;
     height: 250px;
     margin: 20px; }
