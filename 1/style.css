@@ -615,7 +615,6 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #contact {
-  height: 550px;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -712,15 +711,56 @@ input::placeholder {
 .sendmessage:hover {
   background-color: #004a99; }
 
+@media (min-width: 601px) and (max-width: 800px) {
+  .contactustotal {
+    flex-direction: column; }
+  .columna1 {
+    display: flex;
+    justify-content: center; }
+  .infocontacto {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .cajainputs {
+    display: flex;
+    flex-direction: column; }
+  .primerinput-a {
+    width: 500px; }
+  .primerinput-b {
+    width: 500px; }
+  .segundoinput {
+    width: 502px; }
+  textarea {
+    max-width: 500px; } }
+
+@media (max-width: 600px) {
+  .contactustotal {
+    flex-direction: column; }
+  .infocontacto {
+    flex-direction: column; }
+  .cajitaicono {
+    justify-content: left;
+    padding-left: 20px; }
+  .cajainputs {
+    display: flex;
+    flex-direction: column; }
+  .primerinput-a {
+    width: 400px; }
+  .primerinput-b {
+    width: 400px; }
+  .segundoinput {
+    width: 400px; }
+  textarea {
+    max-width: 400px; } }
+
 /* ---------------------------------------
 ------------------------------------------
                   FOOTER 
 -------------------------------------------
 -------------------------------------------*/
 footer {
-  height: 350px;
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 50px;
   background-color: #004a99;
   color: #ffffff; }
   footer .footercontainer {
