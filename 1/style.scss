@@ -571,8 +571,10 @@ i:hover {
 #testimonials {
     width: 100%;
     background-color: $color13; 
-    padding: 60px 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+   
     h3{
         @include formato-titulo;
     }
@@ -582,13 +584,21 @@ i:hover {
         padding-right: 280px;
         padding-left: 280px;
         display: flex;
-}
+        justify-content: center;
+        align-items: center;
+
+        }
 
 .heath {
     width: 120px;
     height: auto;
     border-radius: 60px;
     margin-right: 20px;
+}
+
+.content-testimonials h4 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content-testimonials h5 {
@@ -599,7 +609,38 @@ i:hover {
 
 .content-testimonials p {
     font-style: italic;
+    color: $color7;
+    font-weight: 300;
+    line-height: 1.5;
 }
+
+
+.container-dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dots-testimonials-1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $color3;
+    margin: 5px;
+}
+
+.dots-testimonials {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $color12;
+    margin: 5px;
+}
+
+
+
 
 
 /* ---------------------------------------
@@ -717,33 +758,33 @@ display: flex;
 
     .batman1 {
 
-        width: 400px;
-        height: 350px;
-        border-radius: 30%;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
 
     }
 
     .batman2 {
 
-        width: 400px;
-        height: 350px;
-        border-radius: 30%;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
 
     }
 
     .batman3 {
 
-        width: 400px;
-        height: 350px;
-        border-radius: 30%;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
 
     }
 
     .batman4 {
 
-        width: 400px;
-        height: 350px;
-        border-radius: 30%;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
 
     }
 
