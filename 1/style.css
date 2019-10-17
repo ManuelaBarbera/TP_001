@@ -28,7 +28,8 @@ nav {
 .img-logo img {
   height: 25px;
   width: auto;
-  padding: 15px; }
+  padding: 15px;
+  cursor: pointer; }
 
 .links-header a {
   text-decoration: none;
@@ -329,8 +330,8 @@ i:hover {
     justify-content: center; }
 
 .cajaindividual {
-  width: 250px;
   height: 250px;
+  width: 250px;
   background-color: #00458f;
   text-align: center;
   padding: 20px;
@@ -362,6 +363,14 @@ i:hover {
   display: flex;
   justify-content: center; }
 
+.numeros-choose-bloque1 {
+  display: flex;
+  flex-direction: row; }
+
+.numeros-choose-bloque2 {
+  display: flex;
+  flex-direction: row; }
+
 .contador {
   margin-left: 60px;
   margin-right: 60px;
@@ -375,6 +384,18 @@ i:hover {
   font-weight: bold;
   font-size: 48px;
   text-align: center; }
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .numeros-choose-bloque1 {
+    flex-direction: column; }
+  .numeros-choose-bloque2 {
+    flex-direction: column; } }
+
+@media (max-width: 600px) {
+  .numeros-choose-bloque1 {
+    flex-direction: column; }
+  .numeros-choose-bloque2 {
+    flex-direction: column; } }
 
 /* ---------------------------------------
 ------------------------------------------

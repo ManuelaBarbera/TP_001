@@ -81,6 +81,7 @@ nav {
     height:25px; 
     width: auto; 
     padding: 15px; 
+    cursor: pointer;
 }
 
 .links-header a{
@@ -209,7 +210,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    p{
+    p {
         font-size: 15px;
         color: $color7;
         font-family: $font2;
@@ -454,8 +455,6 @@ i:hover {
        text-align: center;
    }
     
-
-    
 }
 
 .choosemain {
@@ -473,8 +472,8 @@ i:hover {
 }
 
 .cajaindividual {
-    width: 250px;
     height: 250px;
+    width: 250px;
     background-color: $color15;
     text-align: center;
     padding: 20px;
@@ -515,7 +514,17 @@ i:hover {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-   
+
+}
+
+.numeros-choose-bloque1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.numeros-choose-bloque2 {
+    display: flex;
+    flex-direction: row;
 }
 
 .contador {
@@ -538,6 +547,31 @@ p {
     text-align: center;
 }
 
+
+@media (min-width: 601px)and(max-width:800px) {
+    
+
+        .numeros-choose-bloque1 {
+        flex-direction: column;
+    }
+
+    .numeros-choose-bloque2 {
+        flex-direction: column;
+    }
+    }
+
+    @media (max-width: 600px) {
+     
+    
+        .numeros-choose-bloque1 {
+            flex-direction: column;
+        }
+    
+        .numeros-choose-bloque2 {
+            flex-direction: column;
+        }
+
+    }
 
 
 /* ---------------------------------------
