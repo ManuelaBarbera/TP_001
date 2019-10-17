@@ -551,6 +551,15 @@ p {
 @media (min-width: 601px)and(max-width:800px) {
     
 
+    .cajaschoose {
+        flex-wrap: wrap;
+    }
+
+    .cajaindividual {
+        width: 600px;
+        height: 200px;
+        padding-bottom: 10px;
+    }
         .numeros-choose-bloque1 {
         flex-direction: column;
     }
@@ -562,7 +571,15 @@ p {
 
     @media (max-width: 600px) {
      
+        .cajaschoose {
+            flex-wrap: wrap;
+        }
     
+        .cajaindividual {
+            width: 400px;
+            height: 200px;
+        }
+
         .numeros-choose-bloque1 {
             flex-direction: column;
         }
