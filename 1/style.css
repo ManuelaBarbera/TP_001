@@ -197,10 +197,10 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #services {
-  height: 800px;
   width: 100%;
   background-color: #ecf5ff;
   padding-top: 30px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -210,54 +210,95 @@ i:hover {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     text-align: center; }
-    #services h3 p {
-      text-align: center; }
+
+.services-subtitulo {
+  text-align: center;
+  font-size: 14px; }
 
 .contenedorcajas {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center; }
 
+.contenedorcajas1 {
+  display: flex;
+  flex-direction: row; }
+
 .cajas {
-  width: 400px;
-  height: 150px;
+  width: 350px;
+  height: 100px;
   background-color: #ffffff;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   align-items: center; }
-  .cajas .encabezado {
-    font-weight: 700; }
+  .cajas .encabezado-services {
+    font-weight: 700;
+    font-size: 16px; }
+
+.encabezado-services:hover {
+  color: #004a99;
+  cursor: pointer; }
+
+.descripcion-services {
+  font-size: 14px;
+  color: #556877; }
 
 .textcontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
+  .textcontainer descripcion-services {
+    font-size: 14px;
+    line-height: 24px;
+    color: gray; }
 
 .icono1 {
   color: #ff689b;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
 
 .icono2 {
   color: #3fcdc7;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
 
 .icono3 {
   color: #d6ff22;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
 
 .icono4 {
   color: #e9bf06;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
 
 .icono5 {
   color: #41cf2e;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
 
 .icono6 {
   color: #4680ff;
-  font-size: 64px; }
+  font-size: 56px;
+  margin: 10px;
+  padding-right: 30px; }
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .cajas {
+    width: 250px;
+    height: 200px;
+    margin: 30px; } }
+
+@media (max-width: 600px) {
+  .contenedorcajas1 {
+    flex-direction: column; } }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -265,7 +306,6 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 .choose {
-  height: 800px;
   width: 100%;
   background-color: #004a99;
   color: #ffffff;
@@ -276,6 +316,7 @@ i:hover {
     font-weight: 500;
     text-align: center; }
   .choose p {
+    font-size: 15px;
     text-align: center; }
 
 .choosemain {
@@ -285,14 +326,14 @@ i:hover {
   .choosemain .cajaschoose {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: center; }
 
 .cajaindividual {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: #00458f;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   margin: 15px;
   border-radius: 10px; }
   .cajaindividual i {
@@ -310,7 +351,8 @@ i:hover {
 
 .leermas {
   font-weight: 600;
-  cursor: pointer; }
+  cursor: pointer;
+  padding-top: 25px; }
 
 .leermas:hover {
   text-decoration: underline; }
@@ -318,11 +360,21 @@ i:hover {
 .numeroschoose {
   margin-top: 20px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: center; }
+
+.contador {
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column; }
+  .contador p {
+    text-align: center;
+    font-size: 14px; }
 
 .cifrascontador {
   font-weight: bold;
-  font-size: 48px; }
+  font-size: 48px;
+  text-align: center; }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -516,7 +568,10 @@ i:hover {
 @media (max-width: 600px) {
   .content-testimonials {
     padding-right: 30px;
-    padding-left: 30px; } }
+    padding-left: 30px;
+    flex-direction: column; }
+  .texto-testimonials {
+    text-align: center; } }
 
 /* ---------------------------------------
 ------------------------------------------
