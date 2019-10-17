@@ -37,6 +37,7 @@ $icon: 56px;
     width: 330px;
     height: 250px;
     margin: 20px;
+    overflow: hidden;
 }
 
 @mixin estilos-batman {
@@ -47,7 +48,17 @@ $icon: 56px;
 	margin: 20px;
     border-radius: 50%;
     overflow: hidden;
-
+}
+@mixin over-portf{
+    background-color: rgba(58, 58, 172, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(350px);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
 }
 
 body{
@@ -677,6 +688,7 @@ p {
 #portfolio {
     width: 100%;
     height: auto;
+    padding-bottom: 25px;
     background-color: $color1;
     display: flex;
     flex-direction: column;
@@ -696,9 +708,9 @@ p {
 
     .botones-portfolio ul li {
     margin: 15px;
+    margin-top: -20px;
     padding: 6px 20px;
     font-size: 12px;
-    line-height: 20px;
     color: $color3;
     border-radius: 50px;
     background: $color13;
@@ -721,39 +733,91 @@ p {
             background-image: url("img/portfolio/app1.jpg");
             @include formato-back-port;
         }
+        .overlay-portfolio{
+           @include over-portf;
+        }
+        .img-app1:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app2{
             background-image: url("img/portfolio/web3.jpg");
             @include formato-back-port;
         }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app2:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app3{
             background-image: url("img/portfolio/app2.jpg");
-            @include formato-back-port;
-            
+            @include formato-back-port;   
         }
-    
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app3:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app4{
             background-image: url("img/portfolio/card2.jpg");
             @include formato-back-port;
+        }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app4:hover .overlay-portfolio{
+            transform: translateY(0);
         }
         .img-app5{
             background-image: url("img/portfolio/web2.jpg");
             @include formato-back-port;
         }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app5:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app6{
             background-image: url("img/portfolio/app3.jpg");
             @include formato-back-port;
+        }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app6:hover .overlay-portfolio{
+            transform: translateY(0);
         }
         .img-app7{
             background-image: url("img/portfolio/card1.jpg");
             @include formato-back-port;
         }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app7:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app8{
             background-image: url("img/portfolio/card3.jpg");
             @include formato-back-port;
         }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app8:hover .overlay-portfolio{
+            transform: translateY(0);
+        }
         .img-app9{
             background-image: url("img/portfolio/web1.jpg");
             @include formato-back-port;
+        }
+        .overlay-portfolio{
+            @include over-portf;
+        }
+        .img-app9:hover .overlay-portfolio{
+            transform: translateY(0);
         }
     }
    
@@ -771,9 +835,13 @@ p {
 
 #testimonials {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: $color13; 
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
    
     h3{
@@ -782,8 +850,7 @@ p {
     }
 
 .content-testimonials {
-    padding-right: 280px;
-    padding-left: 280px;    
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
