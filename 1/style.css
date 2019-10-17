@@ -45,25 +45,29 @@ nav {
 -------------------------------------------
 -------------------------------------------*/
 #intro {
-  height: 630px;
   width: 100%;
-  background-color: #1445b3; }
+  background-color: #1445b3;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .titulo {
-  height: auto;
-  width: 400px;
-  float: left;
   padding-top: 14%;
   padding-left: 12%;
-  margin-bottom: 40px; }
+  display: flex;
+  flex-direction: column; }
 
 .texto-provide {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: bolder;
   color: #ffffff;
-  text-align: left;
   margin: 0px 0px 40px 0px; }
+
+.botones-provide {
+  display: flex; }
 
 .resaltado-provide {
   color: #74b5fc;
@@ -77,12 +81,15 @@ nav {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 10px 32px;
+  width: 170px;
+  height: 30px;
+  padding-top: 12px;
   border: 2px solid #007bff;
   border-radius: 50px;
   margin: 0 20px 20px 0;
   transition: all 0.5s;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
 .boton-main1:hover {
   background-color: #1445b3;
@@ -95,27 +102,69 @@ nav {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 10px 32px;
+  width: 170px;
+  height: 30px;
+  padding-top: 12px;
   border: 2px solid #ffffff;
   border-radius: 50px;
   margin: 0 20px 20px 0;
   transition: all 0.5s;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
 .boton-main2:hover {
   background-color: #007bff;
   border: 2px solid #007bff; }
 
 .imgventanas {
-  height: 55px;
-  width: 560px;
-  float: right;
   padding-top: 13%;
   padding-right: 12%; }
 
 .imgventanas img {
-  width: 100%;
+  width: 90%;
   height: auto; }
+
+@media (min-width: 601px) and (max-width: 800px) {
+  #intro {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .titulo {
+    padding: 0; }
+  .texto-provide {
+    padding-top: 10px;
+    font-size: 40px;
+    text-align: center; }
+  .imgventanas {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .imgventanas img {
+    width: 70%;
+    height: auto; } }
+
+@media (max-width: 600px) {
+  #intro {
+    padding-top: 80px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center; }
+  .titulo {
+    padding: 0; }
+  .texto-provide {
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center; }
+  .imgventanas {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .imgventanas img {
+    width: 50%;
+    height: auto; } }
 
 /* ---------------------------------------
 ------------------------------------------
