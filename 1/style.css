@@ -10,20 +10,27 @@ body {
                       HEADER 
 -------------------------------------------
 -------------------------------------------*/
-nav {
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  z-index: 1; }
+
+nav .links-header {
   box-sizing: border-box;
   background-color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   color: #004289;
-  height: auto;
   width: 100%;
-  position: fixed;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-  z-index: 1; }
+  align-items: center; }
 
 .img-logo img {
   height: 25px;
@@ -39,6 +46,48 @@ nav {
 .links-header a:hover {
   color: #007bff; }
 
+#menu {
+  background-color: rgba(43, 43, 56, 0.8);
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px; }
+  #menu ul li {
+    list-style: none;
+    margin: 15px 0;
+    font-size: 18px; }
+  #menu ul li:hover {
+    color: #007bff;
+    cursor: context-menu; }
+
+#menu:target {
+  transform: translate(300px); }
+
+.icon-hamb {
+  width: 45px;
+  height: 45px;
+  display: none; }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .links-header a {
+    display: none; }
+  .icon-hamb {
+    display: block; }
+  header {
+    z-index: 0; } }
+
+#cruz {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  color: #ffffff; }
+
 /* ---------------------------------------
 ------------------------------------------
                 WE PROVIDE
@@ -46,15 +95,14 @@ nav {
 -------------------------------------------*/
 #intro {
   background-color: #1445b3;
-  padding-bottom: 80px;
-  padding-left: 40px;
+  padding: 60px 0 80px 40px;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .titulo {
-  padding-top: 14%;
-  padding-left: 12%;
+  padding-top: 11%;
+  padding-left: 10%;
   margin-right: 60px;
   display: flex;
   flex-direction: column; }
@@ -117,8 +165,8 @@ nav {
   border: 2px solid #007bff; }
 
 .imgventanas {
-  padding-top: 13%;
-  padding-right: 12%; }
+  padding-top: 9%;
+  padding-right: 5%; }
 
 .imgventanas img {
   width: 90%;
@@ -180,7 +228,8 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 20px; }
   .tituloabout p {
     font-size: 15px;
     color: #556877;
@@ -342,7 +391,8 @@ i:hover {
     font-size: 36px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
 
 .services-subtitulo {
   text-align: center;
@@ -583,6 +633,8 @@ i:hover {
 
 .img-portfolio {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
   .img-portfolio .img-app1 {
@@ -603,52 +655,29 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white; }
+    .img-portfolio .overlay-portfolio h3 {
+      font-size: 23px;
+      font-weight: bolder;
+      font-family: "Open Sans", sans-serif;
+      margin: 0;
+      cursor: pointer;
+      transition: all 0.5s; }
+    .img-portfolio .overlay-portfolio h3:hover {
+      color: #007bff; }
+    .img-portfolio .overlay-portfolio div i {
+      background-color: #007bff;
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.5s; }
+    .img-portfolio .overlay-portfolio div i:hover {
+      background-color: #74b5fc; }
   .img-portfolio .img-app1:hover .overlay-portfolio {
     transform: translateY(0); }
   .img-portfolio .img-app2 {
-    background-image: url("img/portfolio/web3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 330px;
-    height: 250px;
-    margin: 20px;
-    overflow: hidden; }
-  .img-portfolio .overlay-portfolio {
-    background-color: rgba(58, 58, 172, 0.5);
-    height: 100%;
-    width: 100%;
-    transform: translateY(350px);
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; }
-  .img-portfolio .img-app2:hover .overlay-portfolio {
-    transform: translateY(0); }
-  .img-portfolio .img-app3 {
-    background-image: url("img/portfolio/app2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 330px;
-    height: 250px;
-    margin: 20px;
-    overflow: hidden; }
-  .img-portfolio .overlay-portfolio {
-    background-color: rgba(58, 58, 172, 0.5);
-    height: 100%;
-    width: 100%;
-    transform: translateY(350px);
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; }
-  .img-portfolio .img-app3:hover .overlay-portfolio {
-    transform: translateY(0); }
-  .img-portfolio .img-app4 {
     background-image: url("img/portfolio/card2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -666,6 +695,51 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white; }
+  .img-portfolio .img-app2:hover .overlay-portfolio {
+    transform: translateY(0); }
+  .img-portfolio .img-app3 {
+    background-image: url("img/portfolio/card1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 330px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden; }
+  .img-portfolio .overlay-portfolio {
+    background-color: rgba(58, 58, 172, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(350px);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; }
+  .img-portfolio .img-app3:hover .overlay-portfolio {
+    transform: translateY(0); }
+  .img-portfolio .img-app4 {
+    background-image: url("img/portfolio/web3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 330px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden; }
+  .img-portfolio .overlay-portfolio {
+    background-color: rgba(58, 58, 172, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(350px);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white; }
   .img-portfolio .img-app4:hover .overlay-portfolio {
     transform: translateY(0); }
@@ -687,52 +761,11 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white; }
   .img-portfolio .img-app5:hover .overlay-portfolio {
     transform: translateY(0); }
   .img-portfolio .img-app6 {
-    background-image: url("img/portfolio/app3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 330px;
-    height: 250px;
-    margin: 20px;
-    overflow: hidden; }
-  .img-portfolio .overlay-portfolio {
-    background-color: rgba(58, 58, 172, 0.5);
-    height: 100%;
-    width: 100%;
-    transform: translateY(350px);
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; }
-  .img-portfolio .img-app6:hover .overlay-portfolio {
-    transform: translateY(0); }
-  .img-portfolio .img-app7 {
-    background-image: url("img/portfolio/card1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 330px;
-    height: 250px;
-    margin: 20px;
-    overflow: hidden; }
-  .img-portfolio .overlay-portfolio {
-    background-color: rgba(58, 58, 172, 0.5);
-    height: 100%;
-    width: 100%;
-    transform: translateY(350px);
-    transition: all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; }
-  .img-portfolio .img-app7:hover .overlay-portfolio {
-    transform: translateY(0); }
-  .img-portfolio .img-app8 {
     background-image: url("img/portfolio/card3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -750,6 +783,51 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white; }
+  .img-portfolio .img-app6:hover .overlay-portfolio {
+    transform: translateY(0); }
+  .img-portfolio .img-app7 {
+    background-image: url("img/portfolio/app2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 330px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden; }
+  .img-portfolio .overlay-portfolio {
+    background-color: rgba(58, 58, 172, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(350px);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; }
+  .img-portfolio .img-app7:hover .overlay-portfolio {
+    transform: translateY(0); }
+  .img-portfolio .img-app8 {
+    background-image: url("img/portfolio/app3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 330px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden; }
+  .img-portfolio .overlay-portfolio {
+    background-color: rgba(58, 58, 172, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(350px);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white; }
   .img-portfolio .img-app8:hover .overlay-portfolio {
     transform: translateY(0); }
@@ -771,9 +849,15 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white; }
   .img-portfolio .img-app9:hover .overlay-portfolio {
     transform: translateY(0); }
+
+@media (min-width: 601px) and (max-width: 801px) {
+  .fila1 .fila2 .fila3 {
+    width: 100%;
+    height: 100%; } }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -955,7 +1039,8 @@ i:hover {
   transform: translateX(0); }
 
 .nombrebatman {
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0; }
 
 .cargobatman {
   font-style: italic; }
@@ -1190,7 +1275,7 @@ input::placeholder {
   .segundoinput {
     width: 400px; }
   textarea {
-    max-width: 400px; } }
+    width: 400px; } }
 
 /* ---------------------------------------
 ------------------------------------------

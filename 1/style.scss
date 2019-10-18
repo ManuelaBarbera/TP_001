@@ -58,6 +58,7 @@ $icon: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color:white;
 }
 
@@ -73,21 +74,28 @@ body{
                       HEADER 
 -------------------------------------------
 -------------------------------------------*/
-
-nav {
+header{
+    background-color: $color1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    z-index: 1; 
+}
+nav .links-header{
     box-sizing: border-box; 
     background-color: $color1;
     font-size: 14px;
     font-weight: 500;   
     color: $color5;
-    height: auto;
     width: 100%;
-    position: fixed;
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around; 
     align-items: center;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-    z-index: 1;
+    
 }
 
 .img-logo img{
@@ -105,7 +113,56 @@ nav {
 .links-header a:hover{
     color: $color3;
 }
+#menu {
+    background-color: rgba(43, 43, 56, 0.8);
+    color: $color1;
+    font-size: 18px;
+    font-family: $font2;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:-300px;  
+    ul li{
+        list-style: none;
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    ul li:hover{
+        color: $color3;
+        cursor: context-menu;
+    }
+   
+}
 
+#menu:target{
+    transform: translate(300px);   
+}
+
+.icon-hamb{
+    width: 45px;
+    height: 45px;
+    display: none;
+}
+@media (min-width:320px) and (max-width: 800px){
+    .links-header a{
+        display: none;
+    }
+    .icon-hamb{
+        display: block;
+    }
+    header{
+        z-index: 0;
+    }
+}
+#cruz{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: $color1;
+}
 
 
 
@@ -119,21 +176,19 @@ nav {
 #intro {
     
     background-color: $color2;
-    padding-bottom: 80px;
-    padding-left: 40px;
+    padding: 60px 0 80px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
        }
 
 .titulo {
-    padding-top: 14%;
-    padding-left: 12%;
+    padding-top: 11%;
+    padding-left: 10%;
     margin-right: 60px;
     display: flex;
     flex-direction: column;
 }
-
 
 .texto-provide {
     font-family: $font1; 
@@ -199,9 +254,8 @@ nav {
     border: 2px solid $color3;
 }
 .imgventanas {
-    padding-top: 13%;
-    padding-right: 12%;
-    
+    padding-top: 9%;
+    padding-right: 5%;
 }
 .imgventanas img {
     width: 90%;
@@ -296,6 +350,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px; 
+
     p {
         font-size: 15px;
         color: $color7;
@@ -306,7 +362,7 @@ nav {
 
 .subtitulo-about-us {
     @include formato-titulo;
-    
+
     }
 
 .bloque-about-1 {
@@ -517,15 +573,14 @@ i:hover {
 
     h3{
         @include formato-titulo;
-      
-           
-    
+        margin-bottom: 20px;
     }
     
 }
 .services-subtitulo {
     text-align: center;
    font-size: 14px;
+   
 }
 
 .contenedorcajas {
@@ -852,6 +907,8 @@ p {
 
     .img-portfolio {
         display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
@@ -862,12 +919,39 @@ p {
         }
         .overlay-portfolio{
            @include over-portf;
+
+         h3{
+             font-size: 23px;
+             font-weight: bolder;
+             font-family: $font2;
+             margin: 0;
+             cursor: pointer;
+             transition: all 0.5s;
+         } 
+
+         h3:hover{
+             color:$color3;
+         }
+
+         div {
+             i{
+                 background-color: $color3;
+                 padding: 10px;
+                 margin: 0 5px;
+                 border-radius: 50%;
+                 cursor: pointer;
+                 transition: all 0.5s;
+             }
+             i:hover{
+                 background-color: $color4;
+             }
+         }
         }
         .img-app1:hover .overlay-portfolio{
             transform: translateY(0);
         }
         .img-app2{
-            background-image: url("img/portfolio/web3.jpg");
+            background-image: url("img/portfolio/card2.jpg");
             @include formato-back-port;
         }
         .overlay-portfolio{
@@ -877,7 +961,7 @@ p {
             transform: translateY(0);
         }
         .img-app3{
-            background-image: url("img/portfolio/app2.jpg");
+            background-image: url("img/portfolio/card1.jpg");
             @include formato-back-port;   
         }
         .overlay-portfolio{
@@ -887,7 +971,7 @@ p {
             transform: translateY(0);
         }
         .img-app4{
-            background-image: url("img/portfolio/card2.jpg");
+            background-image: url("img/portfolio/web3.jpg");
             @include formato-back-port;
         }
         .overlay-portfolio{
@@ -907,7 +991,7 @@ p {
             transform: translateY(0);
         }
         .img-app6{
-            background-image: url("img/portfolio/app3.jpg");
+            background-image: url("img/portfolio/card3.jpg");
             @include formato-back-port;
         }
         .overlay-portfolio{
@@ -917,7 +1001,7 @@ p {
             transform: translateY(0);
         }
         .img-app7{
-            background-image: url("img/portfolio/card1.jpg");
+            background-image: url("img/portfolio/app2.jpg");
             @include formato-back-port;
         }
         .overlay-portfolio{
@@ -927,7 +1011,7 @@ p {
             transform: translateY(0);
         }
         .img-app8{
-            background-image: url("img/portfolio/card3.jpg");
+            background-image: url("img/portfolio/app3.jpg");
             @include formato-back-port;
         }
         .overlay-portfolio{
@@ -947,10 +1031,13 @@ p {
             transform: translateY(0);
         }
     }
-   
-
-
-
+    //no se como hacer para que cuando achico la pantalla la foto tambien cambie de tamaño//
+  @media (min-width:601px) and (max-width:801px){
+      .fila1 .fila2 .fila3 {
+          width: 100%;
+          height: 100%;
+      }
+  }
 
 
 
@@ -1152,6 +1239,7 @@ display: flex;
 
 .nombrebatman {
     font-weight: bold; 
+    margin: 0;
 }
 
 .cargobatman {
@@ -1514,7 +1602,7 @@ textarea {
     }
 
     textarea {
-        max-width: 400px;
+        width: 400px;
         }
 }
 
