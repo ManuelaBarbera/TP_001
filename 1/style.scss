@@ -117,9 +117,9 @@ nav {
 
 
 #intro {
-    width: 100%;
+    
     background-color: $color2;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     padding-left: 40px;
     display: flex;
     justify-content: center;
@@ -129,6 +129,7 @@ nav {
 .titulo {
     padding-top: 14%;
     padding-left: 12%;
+    margin-right: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -340,12 +341,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 120px;
     height: 60px;
     border-radius: 50px;
     border: 2px solid $color3;
     margin: 2px;
-    margin-right: 5px;   
+    margin-right: 10px;   
     
     i {
         color: $color3;
@@ -354,6 +355,12 @@ nav {
 
 
 }
+
+
+.leyenda-circulo {
+    font-size: 16px;
+    cursor: pointer;
+    }
 
 .circuloicono:hover {
     background-color: $color3;
@@ -367,6 +374,8 @@ i:hover {
     width: 550px;
     padding-left: 50px;
     padding-right: 50px;
+    font-weight: 150;
+    color: $color6;
     
     .subtituloabout {
         font-size: 24px;
@@ -1239,8 +1248,8 @@ display: flex;
 
 
 .cajablanca {
-    width: 250px;
-    height: 140px;
+    width: 280px;
+    height: 160px;
     background-color: $color1; 
     margin: 1px;
     display: flex;
@@ -1248,6 +1257,11 @@ display: flex;
     align-items: center;   
 
 } 
+
+.cajas-rezagadas {
+    display: flex;
+    
+    }
 
 .logocliente {
     
@@ -1262,6 +1276,8 @@ display: flex;
     }
 }
 
+
+
 @media (max-width:600px) {
 
     .cajablanca {
@@ -1274,9 +1290,13 @@ display: flex;
     width: 380px;
     height: auto;
     }
+
+    .cajas-rezagadas {
+     flex-direction: column;
+        
+    }
         
  }
-
 
 /* ---------------------------------------
 ------------------------------------------

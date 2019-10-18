@@ -45,9 +45,8 @@ nav {
 -------------------------------------------
 -------------------------------------------*/
 #intro {
-  width: 100%;
   background-color: #1445b3;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   padding-left: 40px;
   display: flex;
   justify-content: center;
@@ -56,6 +55,7 @@ nav {
 .titulo {
   padding-top: 14%;
   padding-left: 12%;
+  margin-right: 60px;
   display: flex;
   flex-direction: column; }
 
@@ -218,15 +218,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 120px;
   height: 60px;
   border-radius: 50px;
   border: 2px solid #007bff;
   margin: 2px;
-  margin-right: 5px; }
+  margin-right: 10px; }
   .circuloicono i {
     color: #007bff;
     font-size: 30px; }
+
+.leyenda-circulo {
+  font-size: 16px;
+  cursor: pointer; }
 
 .circuloicono:hover {
   background-color: #007bff; }
@@ -237,7 +241,9 @@ i:hover {
 .textoabout {
   width: 550px;
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  font-weight: 150;
+  color: #283d50; }
   .textoabout .subtituloabout {
     font-size: 24px; }
 
@@ -1014,13 +1020,16 @@ i:hover {
   flex-wrap: wrap; }
 
 .cajablanca {
-  width: 250px;
-  height: 140px;
+  width: 280px;
+  height: 160px;
   background-color: #ffffff;
   margin: 1px;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.cajas-rezagadas {
+  display: flex; }
 
 .logocliente img {
   width: 120px;
@@ -1036,7 +1045,9 @@ i:hover {
     height: 160px; }
   .logocliente img {
     width: 380px;
-    height: auto; } }
+    height: auto; }
+  .cajas-rezagadas {
+    flex-direction: column; } }
 
 /* ---------------------------------------
 ------------------------------------------
