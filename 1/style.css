@@ -371,7 +371,16 @@ i:hover {
     height: auto; }
   .imgabout3 {
     width: 90%;
-    height: auto; } }
+    height: auto; }
+  .textoabout {
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .circuloicono {
+    width: 120px;
+    height: 50px; }
+  .circuloicono i {
+    font-size: 25px; } }
 
 /* ---------------------------------------
 ------------------------------------------
@@ -415,10 +424,16 @@ i:hover {
   margin: 10px;
   padding: 25px;
   display: flex;
-  align-items: center; }
-  .cajas .encabezado-services {
-    font-weight: 700;
-    font-size: 16px; }
+  align-items: center;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s; }
+
+.cajas:hover {
+  transform: translateY(-10px); }
+
+.encabezado-services {
+  font-weight: 700;
+  font-size: 16px; }
 
 .encabezado-services:hover {
   color: #004a99;
@@ -475,9 +490,9 @@ i:hover {
 
 @media (min-width: 601px) and (max-width: 800px) {
   .cajas {
-    width: 250px;
+    width: 400px;
     height: 200px;
-    margin: 30px; } }
+    margin: 10px; } }
 
 @media (max-width: 600px) {
   .contenedorcajas1 {

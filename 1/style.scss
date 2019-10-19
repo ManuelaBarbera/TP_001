@@ -553,7 +553,23 @@ i:hover {
             width: 90%;
             height: auto;
         }       
+        
+        .textoabout {
+            width: 400px;
+            padding-left: 10px;
+            padding-right: 10px;
+         
+            }
+
+        .circuloicono {
+    width: 120px;
+    height: 50px;
+        }
     
+    .circuloicono i
+    {
+    font-size: 25px;
+    }
 
 }
 /* ---------------------------------------
@@ -603,8 +619,15 @@ i:hover {
     padding: 25px;
     display: flex;
     align-items: center;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s;
+        }
 
+    .cajas:hover {
+        transform: translateY(-10px);
+    }
     
+   
     .encabezado-services {
         font-weight: 700;
         font-size: 16px;
@@ -612,7 +635,7 @@ i:hover {
         
     }  
 
-   }
+   
 
    .encabezado-services:hover {
     color: $color10;
@@ -687,9 +710,9 @@ i:hover {
 
  @media (min-width: 601px)and(max-width:800px) {
     .cajas {
-        width: 250px;
+        width: 400px;
         height: 200px;
-        margin: 30px;
+        margin: 10px;
     }
     }
 
@@ -1032,11 +1055,14 @@ p {
         }
     }
     //no se como hacer para que cuando achico la pantalla la foto tambien cambie de tamaño//
-  @media (min-width:601px) and (max-width:801px){
-      .fila1 .fila2 .fila3 {
-          width: 100%;
-          height: 100%;
-      }
+  @media (min-width:601px) and (max-width:801px) {
+   
+
+    .fila1 .fila2 .fila3 {
+        width: 100%;
+        height: 100%;
+    }
+
   }
 
 
