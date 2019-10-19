@@ -1761,26 +1761,57 @@ form {
 	     
     .footercontainer {     
          flex-direction: column;
- }
+         padding-left: 30px;
+  }
+
+  .wayne {
+      margin-right: 50px;
+  }
+
+  .contactus {
+      margin-right: 200px;
+  }
 }
 
 
 
 @media (max-width:600px) {
-    .footercontainer {
+        
+.footercontainer {
         flex-direction: column;
     }
     
-    .bloque1 {
+.bloque1 {
     flex-direction: column;
-
-
 } 
-
 
 .bloque2 {
     flex-direction: column;
 }
+
+footer {
+    padding-left: 20px;
+}
+
+.wayne {
+    width: 400px;
+}
+
+.newsletter {
+width: 400px;
+}
+
+.bloqueemail  {
+
+    width: 320px;
+}
+ .botonsubmit {
+   width: 120px;
+
+ }   
+
+
+
 }
 
  

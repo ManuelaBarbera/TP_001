@@ -1385,7 +1385,12 @@ form {
 
 @media (min-width: 601px) and (max-width: 800px) {
   .footercontainer {
-    flex-direction: column; } }
+    flex-direction: column;
+    padding-left: 30px; }
+  .wayne {
+    margin-right: 50px; }
+  .contactus {
+    margin-right: 200px; } }
 
 @media (max-width: 600px) {
   .footercontainer {
@@ -1393,7 +1398,17 @@ form {
   .bloque1 {
     flex-direction: column; }
   .bloque2 {
-    flex-direction: column; } }
+    flex-direction: column; }
+  footer {
+    padding-left: 20px; }
+  .wayne {
+    width: 400px; }
+  .newsletter {
+    width: 400px; }
+  .bloqueemail {
+    width: 320px; }
+  .botonsubmit {
+    width: 120px; } }
 
 /* --------------------------------------
 ------------------------------------------
