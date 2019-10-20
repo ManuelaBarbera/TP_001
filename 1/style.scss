@@ -233,8 +233,8 @@ padding-bottom: 20px;
 
 .texto-provide {
     font-family: $font1; 
-    font-size: 48px;
-    font-weight: bolder;
+    font-size: 43px;
+    font-weight: bolder; 
     color: $color1; 
     margin: 0px 0px 40px 0px;
     
@@ -297,9 +297,11 @@ padding-bottom: 20px;
 .imgventanas {
     padding-top: 9%;
     padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
 }
 .imgventanas img {
-    width: 90%;
+    width: 77%; 
     height: auto
     }
 
