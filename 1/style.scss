@@ -162,7 +162,7 @@ padding-bottom: 20px;
 }
 
     header{
-        z-index: 0;
+        z-index: 1;
     }
 }
 
@@ -191,7 +191,7 @@ padding-bottom: 20px;
         padding-right: 20px;
     }
     header{
-        z-index: 0;
+        z-index: 1;
     }
 }
 
@@ -1101,7 +1101,20 @@ p {
 
   }
 
+  @media (max-width: 600px) {
 
+  .img-app1 {
+      background-size: contain;
+    width: 500px;
+    height: 400px;
+}
+
+.overlay-portfolio {
+    width: 200%;
+    height: 200%;
+}
+
+}
 
 /* ---------------------------------------
 ------------------------------------------

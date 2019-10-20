@@ -80,7 +80,7 @@ nav .links-header {
   .img-logo img {
     padding-bottom: 20px; }
   header {
-    z-index: 0; } }
+    z-index: 1; } }
 
 @media (max-width: 600px) {
   header {
@@ -95,7 +95,7 @@ nav .links-header {
     width: 20px;
     padding-right: 20px; }
   header {
-    z-index: 0; } }
+    z-index: 1; } }
 
 #cruz {
   width: 30px;
@@ -882,6 +882,15 @@ i:hover {
   .fila1 .fila2 .fila3 {
     width: 100%;
     height: 100%; } }
+
+@media (max-width: 600px) {
+  .img-app1 {
+    background-size: contain;
+    width: 500px;
+    height: 400px; }
+  .overlay-portfolio {
+    width: 200%;
+    height: 200%; } }
 
 /* ---------------------------------------
 ------------------------------------------
