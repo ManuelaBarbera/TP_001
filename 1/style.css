@@ -55,7 +55,8 @@ nav .links-header {
   height: 100%;
   position: absolute;
   top: 0;
-  left: -300px; }
+  left: -300px;
+  z-index: 3; }
   #menu ul li {
     list-style: none;
     margin: 15px 0;

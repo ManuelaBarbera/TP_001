@@ -123,6 +123,7 @@ nav .links-header{
     position: absolute;
     top: 0;
     left:-300px;  
+    z-index: 3;
     ul li{
         list-style: none;
         margin: 15px 0;
