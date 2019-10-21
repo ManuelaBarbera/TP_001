@@ -35,7 +35,7 @@ $icon: 56px;
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden;
 }
@@ -113,6 +113,9 @@ nav .links-header{
 .links-header a:hover{
     color: $color3;
 }
+.links-header a:visited{
+    color: $color5;
+}
 #menu {
     background-color: rgba(43, 43, 56, 0.8);
     color: $color1;
@@ -124,14 +127,22 @@ nav .links-header{
     top: 0;
     left:-300px;  
     z-index: 3;
-    ul li{
+    ul a li{
         list-style: none;
         margin: 15px 0;
         font-size: 18px;
+        text-decoration: none;
+        color: $color1;
     }
-    ul li:hover{
+    ul a li:hover{
         color: $color3;
         cursor: context-menu;
+    }
+    a:visited{
+        text-decoration: none;
+    }
+    a:link{
+        text-decoration: none;
     }
    
 }
@@ -384,17 +395,17 @@ padding-bottom: 20px;
     width: 100%;
     background-color: $color1;
     padding-bottom: 40px; 
-    
     }
   
-   
 .tituloabout {   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px; 
-
+    
+    h3{
+        @include formato-titulo;
+    }
     p {
         font-size: 15px;
         color: $color7;
@@ -402,11 +413,6 @@ padding-bottom: 20px;
         text-align: center;
     }
 }
-
-.subtitulo-about-us {
-    @include formato-titulo;
-
-    }
 
 .bloque-about-1 {
     padding-top: 20px;
@@ -1093,31 +1099,8 @@ p {
             transform: translateY(0);
         }
     }
-    //no se como hacer para que cuando achico la pantalla la foto tambien cambie de tamaño//
-  @media (min-width:601px) and (max-width:801px) {
-   
 
-    .fila1 .fila2 .fila3 {
-        width: 100%;
-        height: 100%;
-    }
 
-  }
-
-  @media (max-width: 600px) {
-
-  .img-app1 {
-      background-size: contain;
-    width: 500px;
-    height: 400px;
-}
-
-.overlay-portfolio {
-    width: 200%;
-    height: 200%;
-}
-
-}
 
 /* ---------------------------------------
 ------------------------------------------

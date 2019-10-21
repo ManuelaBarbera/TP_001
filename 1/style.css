@@ -46,6 +46,9 @@ nav .links-header {
 .links-header a:hover {
   color: #007bff; }
 
+.links-header a:visited {
+  color: #004289; }
+
 #menu {
   background-color: rgba(43, 43, 56, 0.8);
   color: #ffffff;
@@ -57,13 +60,19 @@ nav .links-header {
   top: 0;
   left: -300px;
   z-index: 3; }
-  #menu ul li {
+  #menu ul a li {
     list-style: none;
     margin: 15px 0;
-    font-size: 18px; }
-  #menu ul li:hover {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff; }
+  #menu ul a li:hover {
     color: #007bff;
     cursor: context-menu; }
+  #menu a:visited {
+    text-decoration: none; }
+  #menu a:link {
+    text-decoration: none; }
 
 #menu:target {
   transform: translate(300px); }
@@ -248,20 +257,18 @@ nav .links-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 20px; }
+  justify-content: center; }
+  .tituloabout h3 {
+    color: #283d50;
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; }
   .tituloabout p {
     font-size: 15px;
     color: #556877;
     font-family: "Open Sans", sans-serif;
     text-align: center; }
-
-.subtitulo-about-us {
-  color: #283d50;
-  font-size: 36px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  text-align: center; }
 
 .bloque-about-1 {
   padding-top: 20px;
@@ -670,7 +677,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -710,7 +717,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -732,7 +739,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -754,7 +761,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -776,7 +783,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -798,7 +805,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -820,7 +827,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -842,7 +849,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -864,7 +871,7 @@ i:hover {
     background-size: cover;
     background-position: center;
     width: 330px;
-    height: 250px;
+    height: 220px;
     margin: 20px;
     overflow: hidden; }
   .img-portfolio .overlay-portfolio {
@@ -880,20 +887,6 @@ i:hover {
     color: white; }
   .img-portfolio .img-app9:hover .overlay-portfolio {
     transform: translateY(0); }
-
-@media (min-width: 601px) and (max-width: 801px) {
-  .fila1 .fila2 .fila3 {
-    width: 100%;
-    height: 100%; } }
-
-@media (max-width: 600px) {
-  .img-app1 {
-    background-size: contain;
-    width: 500px;
-    height: 400px; }
-  .overlay-portfolio {
-    width: 200%;
-    height: 200%; } }
 
 /* ---------------------------------------
 ------------------------------------------
