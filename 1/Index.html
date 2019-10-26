@@ -1,3 +1,34 @@
+<!-- Observaciones generales sobre el TP
+
+1. Muy buen trabajo en general, particularmente la parte desktop. Todos los detalles muy bien cuidados, 
+el comportamiento de los elementos interactivos muy lindo, se nota un enorme trabajo en equipo. 
+
+2. Me llama la atención que todo el código haya estado contenido en una sola carpeta llamada 1 - 
+eso dificulta tanto verlo a primera vista en github, como publicarlo. No deberia haber sido dificil corregirlo. 
+En ese mismo sentido, recuerden que por favor los nombres de archivos van siempre con minúsculas. (index.html)
+
+3. En general la parte mobile está muy bien hecha pero tiene algunos problemas de estructura - el mas
+grave de ellos -y un problema muy comun en muchas webs- es un scroll horizontal que aparece porque algunos
+elementos son mas anchos que la pantalla que estamos usando. Por ejemplo, si mi celular mide 375px, pero
+su codigo tiene un elemento con un width de 400, ese elemento fuerza un scroll horizontal. Habrán notado
+que hay una barra blanca a la derecha de la web, que es en donde se ve mas ese problema.  Voy a tratar de ir
+comentando en su codigo los elementos que traigan este problema. Como regla general, nada en una web
+adaptada para celulares debe medir mas de 100% width o 320px - el tamaño de los celulares mas pequeños
+
+4. En general el HTML es muy bueno, muy prolijo, buenos nombres de clases, y especialmente muy semantico 
+(es decir, no hacen todo con divs, sino que saben cuando usar un section, un button, etc). La unica observacion
+seria que haria en el HTML es que no hay atributos alt en ninguna imagen, por lo que esta web es
+inaccesible para una persona con lector de pantalla. 
+
+5. Ire dejando a lo largo del codigo distintas observaciones. La intencion de todas ellas es que las usen
+como oportunidad para seguir aprendiendo - quiza les comente cosas que no vimos explicitamente en alguna
+clase, porque mi idea no es tanto "corregir" como darles chances de aprendizaje. 
+
+Espero que hayan aprendido mucho con este TP  y que lo hayan disfrutado mas alla del estres
+Hicieron un GRAN trabajo!
+
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,6 +52,11 @@
     ----------------------------------------------->
     <header>
         <div class="img-logo">
+            <!-- Recuerden que todas las imagenes deben tener un alt 
+            Eso hace que las personas que usan un lector de pantalla puedan
+            entender de que se trata. 
+            En este caso, diriamos por ejemplo
+            alt="Logo de Ada" -->
             <img src="./img/logo-tp.png">
         </div>
         <nav>
@@ -78,6 +114,10 @@
         <div class="titulo">
             <h1 class="texto-provide">
                 We provide
+                <!-- En general tratamos de no usar etiquetas br y darle distancia a las cosas
+                utilizando el css, como flex. 
+                No es una regla a cumplir a rajatabla, pero opten cuando puedan 
+                por dar los estilos desde el css y no desde el html -->
                 <br>
                 <span class="resaltado-provide">solutions</span>
                 <br>
@@ -350,6 +390,8 @@
                         PORTFOLIO
     -----------------------------------------------
     ----------------------------------------------->
+
+    <!-- este elemento deberia ser un section y no un div -->
     <div id="portfolio">
         <h3 class="titulo-portfolio">Our Portfolio</h3>
 
