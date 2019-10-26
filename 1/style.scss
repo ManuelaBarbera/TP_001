@@ -23,6 +23,8 @@ $font2: 'Open Sans', sans-serif;
 
 $icon: 56px;
 
+// muy buen uso de mixins
+
 @mixin formato-titulo {
     color: $color6;
     font-size: 36px;
@@ -116,6 +118,8 @@ nav .links-header{
 .links-header a:visited{
     color: $color5;
 }
+
+// muy bien resuelto el menu mobile!
 #menu {
     background-color: rgba(43, 43, 56, 0.8);
     color: $color1;
@@ -186,6 +190,9 @@ padding-bottom: 20px;
 
         }
     
+        // esto no seria necesario si en la media query anterior hubieramos puesto
+        // @media (max-width: 800px)
+        // en ese caso se va a "heredar" a esta.
     .links-header a{
         display: none;
     }
@@ -218,6 +225,10 @@ padding-bottom: 20px;
 }
 
 
+// muy bien organizado el codigo en general, me gusta mucho este uso de comentarios
+// para dividir secciones
+
+
 /* ---------------------------------------
 ------------------------------------------
                 WE PROVIDE
@@ -229,6 +240,9 @@ padding-bottom: 20px;
     
     background-color: $color2;
     padding: 60px 0 80px 40px;
+
+    // estos tres selectores de flex se repiten mucho a lo largo del codigo
+    // podrian ser un mixin
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,6 +298,14 @@ padding-bottom: 20px;
     background-color: $color2;
     border: 2px solid $color1;
 }
+// se repite mucho codigo en los dos botones del main
+// podriamos solucionarlo
+// 1. con un mixin
+// 2. con una clase para todos los estilos compartidos
+// y otra clase para los estilos propios de cada uno
+// en el html escribimos las dos clases separadas por una coma 
+// class="boton-main boton-main1"
+
 .boton-main2{
     background-color: $color2;
     color: $color1;
@@ -320,6 +342,8 @@ padding-bottom: 20px;
     @media (min-width: 601px)and(max-width:800px) {
         
       #intro {
+          // este primer selector se pisa con el siguiente, de column reverse
+          // deberia borrarse
           flex-direction: column;
           flex-direction:  column-reverse;
           justify-content: center;
@@ -351,6 +375,8 @@ padding-bottom: 20px;
        
             #intro {
                 padding-top: 80px;
+           // este primer selector se pisa con el siguiente, de column reverse
+          // deberia borrarse
                 flex-direction: column;
                 flex-direction:  column-reverse;
                 justify-content: center;
@@ -392,6 +418,7 @@ padding-bottom: 20px;
 -------------------------------------------*/
 
 #about {
+    // este width de 100% no es necesario, los section ya hacen eso por defecto
     width: 100%;
     background-color: $color1;
     padding-bottom: 40px; 
@@ -414,6 +441,7 @@ padding-bottom: 20px;
     }
 }
 
+// bloque-about-1, 2 y 3 comparten todo el estilo: deberian tener los tres la misma clase
 .bloque-about-1 {
     padding-top: 20px;
     display: flex;
@@ -438,6 +466,7 @@ padding-bottom: 20px;
 
 .subbloqueabout {
     display: flex;
+    // recuerden que el flex direction row no es necesario 
     flex-direction: row;
     align-items: center;
    } 
@@ -508,6 +537,7 @@ i:hover {
   
     .bloque-about-1 {
         display: flex;
+        // otro column que deberia borrarse porque es pisado por el column reverse
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
@@ -524,12 +554,15 @@ i:hover {
 
     .bloque-about-3 {
         display: flex;
+                // otro column que deberia borrarse porque es pisado por el column reverse
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
 
+    // estas tres imagenes comparten casi todo su estilo
+    // aqui yo hubiera usado un mixin, o una clase para el estilo que comparten
     .imgabout1 {
         width: 75%;
         height: auto;
@@ -563,6 +596,7 @@ i:hover {
 @media (max-width: 600px) {
     .bloque-about-1 {
         display: flex;
+        // nuevamente, un column que no es necesario
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
@@ -579,6 +613,7 @@ i:hover {
 
     .bloque-about-3 {
         display: flex;
+        // column! 
         flex-direction: column;
         flex-direction: column-reverse;
         justify-content: center;
@@ -604,6 +639,8 @@ i:hover {
         }       
         
         .textoabout {
+            // como este texto tiene un width de 400px, arruina la pagina si la vemos
+            // en celulares menores a esa resolucion
             width: 400px;
             padding-left: 10px;
             padding-right: 10px;
@@ -627,7 +664,7 @@ i:hover {
 -------------------------------------------
 -------------------------------------------*/
 #services {
-
+// este width no es necesario
     width: 100%;
     background-color: $color13; 
     padding-top: 30px;
@@ -656,6 +693,7 @@ i:hover {
 
 .contenedorcajas1 {
     display: flex;
+    // no es necesario este row 
     flex-direction: row;
 }        
 
@@ -703,6 +741,12 @@ i:hover {
 
  .iconcontainer {
      margin-right: 10px;
+
+     // si aca ponemos un margen en negativo
+     // por ejemplo margin-left: -50px;
+     // logramos el efecto de la web modelo, con los iconos "recortados"
+     // en ese caso habria que agregarle tambien un  overflow: hidden 
+     // a .cajas 
      margin-left: 0;
  }   
     
@@ -766,6 +810,7 @@ i:hover {
 -------------------------------------------*/
 
 .choose {
+    // este width no es necesario
     width: 100%;
     background-color: $color10; 
     color: $color1;
@@ -794,6 +839,7 @@ i:hover {
     
 .cajaschoose {
     display: flex;
+    // este row no es necesario
     flex-direction: row;
     justify-content: center;
    }
@@ -845,6 +891,9 @@ i:hover {
 
 }
 
+// los siguientes dos selectores comparten todo su codigo
+// deberian ser una sola clase
+// noten tambien que flex direction row no es necesario
 .numeros-choose-bloque1 {
     display: flex;
     flex-direction: row;
@@ -856,6 +905,8 @@ i:hover {
 }
 
 .contador {
+    // este margin tan grande, como no es eliminado por una media query, 
+    // causa problemas en mobile. 
     margin-left: 90px;
     margin-right: 90px;
     display: flex;
@@ -909,6 +960,8 @@ p {
         }
     
         .cajaindividual {
+            // 400 es un width muy grande para mobile
+            // yo hubiera utilizado width: 100% u 80%
             width: 400px;
             height: 200px;
         }
@@ -936,6 +989,7 @@ p {
 -------------------------------------------*/
 
 #portfolio {
+    // este width no es necesario
     width: 100%;
     height: auto;
     padding-bottom: 25px;
@@ -975,6 +1029,7 @@ p {
 
     .img-portfolio {
         display: flex; 
+        // este row no es necesario
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -1015,6 +1070,8 @@ p {
              }
          }
         }
+
+        
         .img-app1:hover .overlay-portfolio{
             transform: translateY(0);
         }
@@ -1109,6 +1166,7 @@ p {
 -------------------------------------------*/
 
 #testimonials {
+    // este width no es necesario
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1160,6 +1218,7 @@ p {
 
 .container-dots {
     display: flex;
+    // este row no es necesario
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1214,7 +1273,8 @@ p {
 -------------------------------------------*/
 
 #team {
-	height: auto;
+    height: auto;
+    // este width no es necesario
 	width: 100%;
     background-color: $color1;
     padding-top: 20px;
@@ -1278,6 +1338,9 @@ display: flex;
 	transition: transform 1s;
 }
 
+
+// quiza podriamos pensar una estrategia para no repetir tanto codigo aca
+// dos clases en el elemento de la foto podria ser una solucion 
 .batman1:hover .overlay {
 	transform: translateX(0);
 }
@@ -1368,6 +1431,7 @@ display: flex;
 -------------------------------------------*/
 
 .clients {
+    // este width  no es necesario
     width: 100%;
     padding-top: 20px;
     padding-bottom: 80px;
@@ -1428,7 +1492,7 @@ display: flex;
 @media (max-width:600px) {
 
     .cajablanca {
-
+// este tamaño es un poco grande para celulares
     width: 420px;
     height: 160px;
     }
@@ -1452,6 +1516,7 @@ display: flex;
 -------------------------------------------*/
 
 #contact {
+    // width no necesario
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1649,6 +1714,9 @@ textarea {
                       
     }
 
+
+    // como estos tamaños siguen asi en mobile, 
+    // fuerzan el scroll horizontal en resoluciones menores a 400
     .primerinput-a {
         width: 400px;
     }
